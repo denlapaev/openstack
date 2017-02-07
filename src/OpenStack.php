@@ -40,7 +40,7 @@ class OpenStack
             $options['identityService'] = $this->getDefaultIdentityService($options);
         }
 
-        $this->builder = $builder ?: new Builder($options, 'OpenStack');
+        $this->builder = $builder ?: new Builder($options, 'DenLapaev\\OpenStack');
     }
 
     /**
