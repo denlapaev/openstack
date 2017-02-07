@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Resource;
+namespace DenLapaev\OpenStack\Common\Resource;
 
 /**
  * Represents a resource that can be updated.
  *
- * @package OpenStack\Common\Resource
+ * @package DenLapaev\OpenStack\Common\Resource
  */
 interface Updateable
 {

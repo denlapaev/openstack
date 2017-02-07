@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Compute\v2\Models;
+namespace DenLapaev\OpenStack\Compute\v2\Models;
 
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Resource\Deletable;
-use OpenStack\Common\Resource\HasMetadata;
-use OpenStack\Common\Resource\Listable;
-use OpenStack\Common\Resource\Retrievable;
-use OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Resource\Deletable;
+use DenLapaev\OpenStack\Common\Resource\HasMetadata;
+use DenLapaev\OpenStack\Common\Resource\Listable;
+use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use DenLapaev\OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 /**

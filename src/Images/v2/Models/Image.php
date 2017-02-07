@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Images\v2\Models;
+namespace DenLapaev\OpenStack\Images\v2\Models;
 
 use function GuzzleHttp\Psr7\uri_for;
-use OpenStack\Common\JsonSchema\Schema;
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Resource\Creatable;
-use OpenStack\Common\Resource\Deletable;
-use OpenStack\Common\Resource\Listable;
-use OpenStack\Common\Resource\Retrievable;
-use OpenStack\Common\Transport\Utils;
-use OpenStack\Images\v2\JsonPatch;
+use DenLapaev\OpenStack\Common\JsonSchema\Schema;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Resource\Creatable;
+use DenLapaev\OpenStack\Common\Resource\Deletable;
+use DenLapaev\OpenStack\Common\Resource\Listable;
+use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use DenLapaev\OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Images\v2\JsonPatch;
 use Psr\Http\Message\StreamInterface;
 
 /**

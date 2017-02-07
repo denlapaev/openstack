@@ -3,11 +3,11 @@
 namespace unit\Networking\v2\Extensions\Layer3\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Test\TestCase;
-use OpenStack\Networking\v2\Extensions\Layer3\Api;
-use OpenStack\Networking\v2\Extensions\Layer3\Models\FixedIp;
-use OpenStack\Networking\v2\Extensions\Layer3\Models\GatewayInfo;
-use OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
+use DenLapaev\OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api;
+use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FixedIp;
+use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\GatewayInfo;
+use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
 
 class RouterTest extends TestCase
 {

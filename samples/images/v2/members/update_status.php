@@ -2,9 +2,9 @@
 
 require 'vendor/autoload.php';
 
-use OpenStack\Images\v2\Models\Member;
+use DenLapaev\OpenStack\Images\v2\Models\Member;
 
-$openstack = new OpenStack\OpenStack([
+$openstack = new DenLapaev\OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => ['id' => '{userId}', 'password' => '{password}'],

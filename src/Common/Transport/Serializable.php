@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Common\Transport;
+namespace DenLapaev\OpenStack\Common\Transport;
 
 interface Serializable
 {

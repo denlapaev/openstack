@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Api;
+namespace DenLapaev\OpenStack\Common\Api;
 
 /**
  * This class represents an OpenStack API operation. It encapsulates most aspects of the REST operation: its HTTP
@@ -11,7 +11,7 @@ namespace OpenStack\Common\Api;
  * to be created from the user values provided. Once this request is assembled, it is then sent to the
  * remote API and the response is returned to whoever first invoked the Operation class.
  *
- * @package OpenStack\Common\Api
+ * @package DenLapaev\OpenStack\Common\Api
  */
 class Operation
 {

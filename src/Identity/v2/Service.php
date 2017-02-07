@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Identity\v2;
+namespace DenLapaev\OpenStack\Identity\v2;
 
 use GuzzleHttp\ClientInterface;
-use OpenStack\Common\Auth\IdentityService;
-use OpenStack\Common\Service\AbstractService;
-use OpenStack\Identity\v2\Models\Catalog;
-use OpenStack\Identity\v2\Models\Token;
+use DenLapaev\OpenStack\Common\Auth\IdentityService;
+use DenLapaev\OpenStack\Common\Service\AbstractService;
+use DenLapaev\OpenStack\Identity\v2\Models\Catalog;
+use DenLapaev\OpenStack\Identity\v2\Models\Token;
 
 /**
  * Represents the OpenStack Identity v2 service.

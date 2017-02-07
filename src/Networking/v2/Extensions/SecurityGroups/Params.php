@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Networking\v2\Extensions\SecurityGroups;
+namespace DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups;
 
 class Params extends \OpenStack\Networking\v2\Params
 {

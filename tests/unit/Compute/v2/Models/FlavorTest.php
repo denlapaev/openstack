@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\Compute\v2\Models;
+namespace DenLapaev\OpenStack\Test\Compute\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Compute\v2\Api;
-use OpenStack\Compute\v2\Models\Flavor;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Compute\v2\Api;
+use DenLapaev\OpenStack\Compute\v2\Models\Flavor;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class FlavorTest extends TestCase
 {

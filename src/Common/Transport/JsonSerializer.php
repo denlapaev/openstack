@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Transport;
+namespace DenLapaev\OpenStack\Common\Transport;
 
-use OpenStack\Common\Api\Parameter;
-use OpenStack\Common\JsonPath;
+use DenLapaev\OpenStack\Common\Api\Parameter;
+use DenLapaev\OpenStack\Common\JsonPath;
 
 /**
  * Class responsible for populating the JSON body of a {@see GuzzleHttp\Message\Request} object.
  *
- * @package OpenStack\Common\Transport
+ * @package DenLapaev\OpenStack\Common\Transport
  */
 class JsonSerializer
 {

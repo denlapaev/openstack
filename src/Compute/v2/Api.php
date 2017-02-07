@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Compute\v2;
+namespace DenLapaev\OpenStack\Compute\v2;
 
-use OpenStack\Common\Api\AbstractApi;
+use DenLapaev\OpenStack\Common\Api\AbstractApi;
 
 /**
  * A representation of the Compute (Nova) v2 REST API.
  *
  * @internal
- * @package OpenStack\Compute\v2
+ * @package DenLapaev\OpenStack\Compute\v2
  */
 class Api extends AbstractApi
 {

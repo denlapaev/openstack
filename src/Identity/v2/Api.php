@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Identity\v2;
+namespace DenLapaev\OpenStack\Identity\v2;
 
-use OpenStack\Common\Api\ApiInterface;
+use DenLapaev\OpenStack\Common\Api\ApiInterface;
 
 /**
- * Represents the OpenStack Identity v2 API.
+ * Represents the DenLapaev\OpenStack Identity v2 API.
  *
- * @package OpenStack\Identity\v2
+ * @package DenLapaev\OpenStack\Identity\v2
  */
 class Api implements ApiInterface
 {

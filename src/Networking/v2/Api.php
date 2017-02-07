@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Networking\v2;
+namespace DenLapaev\OpenStack\Networking\v2;
 
-use OpenStack\Common\Api\AbstractApi;
+use DenLapaev\OpenStack\Common\Api\AbstractApi;
 
 /**
  * A representation of the Neutron (Nova) v2 REST API.
  *
  * @internal
- * @package OpenStack\Networking\v2
+ * @package DenLapaev\OpenStack\Networking\v2
  */
 class Api extends AbstractApi
 {

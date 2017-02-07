@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Test\Fixtures;
+namespace DenLapaev\OpenStack\Test\Fixtures;
 
 class IdentityV3Api
 {

@@ -4,7 +4,7 @@ require 'vendor/autoload.php';
 
 use GuzzleHttp\Psr7\Stream;
 
-$openstack = new OpenStack\OpenStack([
+$openstack = new DenLapaev\OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => [

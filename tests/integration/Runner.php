@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Integration;
+namespace DenLapaev\OpenStack\Integration;
 
 class Runner
 {

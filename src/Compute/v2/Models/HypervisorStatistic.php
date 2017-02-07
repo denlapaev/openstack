@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Compute\v2\Models;
+namespace DenLapaev\OpenStack\Compute\v2\Models;
 
-use OpenStack\Common\Resource\Creatable;
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Resource\Retrievable;
-use OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Common\Resource\Creatable;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use DenLapaev\OpenStack\Common\Transport\Utils;
 
 /**
  * Represents a Compute v2 Quota

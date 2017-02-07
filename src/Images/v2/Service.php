@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Images\v2;
+namespace DenLapaev\OpenStack\Images\v2;
 
-use OpenStack\Common\Service\AbstractService;
-use OpenStack\Images\v2\Models\Image;
+use DenLapaev\OpenStack\Common\Service\AbstractService;
+use DenLapaev\OpenStack\Images\v2\Models\Image;
 
 /**
  * @property Api $api

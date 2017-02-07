@@ -1,12 +1,12 @@
 <?php
 
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Service;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Service;
 
 require 'vendor/autoload.php';
 
-$openstack = new OpenStack\OpenStack([
+$openstack = new DenLapaev\OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => [

@@ -3,11 +3,11 @@
 namespace unit\Networking\v2\Extensions\SecurityGroups;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Test\TestCase;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Api;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Service;
+use DenLapaev\OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Api;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Service;
 
 class ServiceTest extends TestCase
 {

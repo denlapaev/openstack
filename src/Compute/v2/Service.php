@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Compute\v2;
+namespace DenLapaev\OpenStack\Compute\v2;
 
-use OpenStack\Common\Service\AbstractService;
-use OpenStack\Compute\v2\Models\Flavor;
-use OpenStack\Compute\v2\Models\HypervisorStatistic;
-use OpenStack\Compute\v2\Models\Image;
-use OpenStack\Compute\v2\Models\Keypair;
-use OpenStack\Compute\v2\Models\Limit;
-use OpenStack\Compute\v2\Models\Server;
+use DenLapaev\OpenStack\Common\Service\AbstractService;
+use DenLapaev\OpenStack\Compute\v2\Models\Flavor;
+use DenLapaev\OpenStack\Compute\v2\Models\HypervisorStatistic;
+use DenLapaev\OpenStack\Compute\v2\Models\Image;
+use DenLapaev\OpenStack\Compute\v2\Models\Keypair;
+use DenLapaev\OpenStack\Compute\v2\Models\Limit;
+use DenLapaev\OpenStack\Compute\v2\Models\Server;
 
 /**
  * Compute v2 service for OpenStack.

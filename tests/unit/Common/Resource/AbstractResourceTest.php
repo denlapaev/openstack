@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenStack\Test\Common\Resource;
+namespace DenLapaev\OpenStack\Test\Common\Resource;
 
 use function GuzzleHttp\Psr7\stream_for;
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Common\Resource\AbstractResource;
-use OpenStack\Common\Resource\ResourceInterface;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Common\Resource\AbstractResource;
+use DenLapaev\OpenStack\Common\Resource\ResourceInterface;
+use DenLapaev\OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class AbstractResourceTest extends TestCase

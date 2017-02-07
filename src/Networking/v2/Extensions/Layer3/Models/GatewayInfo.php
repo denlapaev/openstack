@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\Networking\v2\Extensions\Layer3\Models;
+namespace DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models;
 
-use OpenStack\Common\Resource\AbstractResource;
+use DenLapaev\OpenStack\Common\Resource\AbstractResource;
 
 class GatewayInfo extends AbstractResource
 {

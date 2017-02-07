@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Test;
+namespace DenLapaev\OpenStack\Test;
 
 use function GuzzleHttp\Psr7\stream_for;
 use function GuzzleHttp\Psr7\parse_response;

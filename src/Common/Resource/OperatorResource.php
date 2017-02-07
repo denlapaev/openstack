@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenStack\Common\Resource;
+namespace DenLapaev\OpenStack\Common\Resource;
 
-use OpenStack\Common\Api\OperatorInterface;
-use OpenStack\Common\Api\OperatorTrait;
-use OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Common\Api\OperatorInterface;
+use DenLapaev\OpenStack\Common\Api\OperatorTrait;
+use DenLapaev\OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 abstract class OperatorResource extends AbstractResource implements OperatorInterface

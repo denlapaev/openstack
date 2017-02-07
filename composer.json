@@ -14,13 +14,13 @@
     ],
     "autoload": {
         "psr-4": {
-            "OpenStack\\": "src/"
+            "DenLapaev\\OpenStack\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "OpenStack\\Test\\": "tests/unit/",
-            "OpenStack\\Integration\\": "tests/integration/"
+            "DenLapaev\\OpenStack\\Test\\": "tests/unit/",
+            "DenLapaev\\OpenStack\\Integration\\": "tests/integration/"
         }
     },
     "repositories": [

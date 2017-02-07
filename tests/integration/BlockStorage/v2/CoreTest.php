@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenStack\integration\BlockStorage\v2;
+namespace DenLapaev\OpenStack\integration\BlockStorage\v2;
 
-use OpenStack\BlockStorage\v2\Models\Snapshot;
-use OpenStack\BlockStorage\v2\Models\Volume;
-use OpenStack\BlockStorage\v2\Models\VolumeType;
-use OpenStack\Integration\TestCase;
-use OpenStack\Integration\Utils;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\Snapshot;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\Volume;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeType;
+use DenLapaev\OpenStack\Integration\TestCase;
+use DenLapaev\OpenStack\Integration\Utils;
 
 class CoreTest extends TestCase
 {

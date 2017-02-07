@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Api;
+namespace DenLapaev\OpenStack\Common\Api;
 
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Promise\PromiseInterface;
-use OpenStack\Common\Resource\ResourceInterface;
+use DenLapaev\OpenStack\Common\Resource\ResourceInterface;
 use Psr\Http\Message\ResponseInterface;
 
 /**
@@ -13,7 +13,7 @@ use Psr\Http\Message\ResponseInterface;
  * it needs two things: a {@see ClientInterface} for handling HTTP transactions and an {@see ApiInterface}
  * for handling how operations are created.
  *
- * @package OpenStack\Common\Api
+ * @package DenLapaev\OpenStack\Common\Api
  */
 interface OperatorInterface
 {

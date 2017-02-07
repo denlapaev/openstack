@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common;
+namespace DenLapaev\OpenStack\Common;
 
 /**
  * Represents common functionality for populating, or "hydrating", an object with arbitrary data.
  *
- * @package OpenStack\Common
+ * @package DenLapaev\OpenStack\Common
  */
 trait HydratorStrategyTrait
 {

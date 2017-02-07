@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\BlockStorage\v2;
+namespace DenLapaev\OpenStack\BlockStorage\v2;
 
-use OpenStack\BlockStorage\v2\Models\Snapshot;
-use OpenStack\BlockStorage\v2\Models\Volume;
-use OpenStack\BlockStorage\v2\Models\VolumeType;
-use OpenStack\Common\Service\AbstractService;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\Snapshot;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\Volume;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeType;
+use DenLapaev\OpenStack\Common\Service\AbstractService;
 
 /**
  * @property \OpenStack\BlockStorage\v2\Api $api

@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Compute\v2\Models;
+namespace DenLapaev\OpenStack\Compute\v2\Models;
 
-use OpenStack\Common\Resource\HasWaiterTrait;
-use OpenStack\Common\Resource\Creatable;
-use OpenStack\Common\Resource\Deletable;
-use OpenStack\Common\Resource\Listable;
-use OpenStack\Common\Resource\Retrievable;
-use OpenStack\Common\Resource\Updateable;
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Transport\Utils;
-use OpenStack\BlockStorage\v2\Models\VolumeAttachment;
-use OpenStack\Compute\v2\Enum;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use DenLapaev\OpenStack\Common\Resource\HasWaiterTrait;
+use DenLapaev\OpenStack\Common\Resource\Creatable;
+use DenLapaev\OpenStack\Common\Resource\Deletable;
+use DenLapaev\OpenStack\Common\Resource\Listable;
+use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use DenLapaev\OpenStack\Common\Resource\Updateable;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeAttachment;
+use DenLapaev\OpenStack\Compute\v2\Enum;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
 use Psr\Http\Message\ResponseInterface;
 
 /**

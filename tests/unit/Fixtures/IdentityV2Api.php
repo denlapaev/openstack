@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\Test\Fixtures;
+namespace DenLapaev\OpenStack\Test\Fixtures;
 
-use OpenStack\Common\Api\ApiInterface;
+use DenLapaev\OpenStack\Common\Api\ApiInterface;
 
 class IdentityV2Api implements ApiInterface
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\Identity\v3\Models;
+namespace DenLapaev\OpenStack\Test\Identity\v3\Models;
 
-use OpenStack\Identity\v3\Api;
-use OpenStack\Identity\v3\Models\Catalog;
-use OpenStack\Identity\v3\Models\Service;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Identity\v3\Api;
+use DenLapaev\OpenStack\Identity\v3\Models\Catalog;
+use DenLapaev\OpenStack\Identity\v3\Models\Service;
+use DenLapaev\OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class CatalogTest extends TestCase

@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenStack\Test\Common\Transport;
+namespace DenLapaev\OpenStack\Test\Common\Transport;
 
 use GuzzleHttp\Psr7\Response;
 use function GuzzleHttp\Psr7\uri_for;
 use GuzzleHttp\Psr7\Uri;
-use OpenStack\Common\Transport\Utils;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class UtilsTest extends TestCase
 {

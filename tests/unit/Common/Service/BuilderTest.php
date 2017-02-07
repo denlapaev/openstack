@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenStack\Test\Common\Service;
+namespace DenLapaev\OpenStack\Test\Common\Service;
 
-use OpenStack\Common\Auth\IdentityService;
-use OpenStack\Common\Auth\Token;
-use OpenStack\Common\Service\Builder;
-use OpenStack\Test\Common\Service\Fixtures;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Common\Auth\IdentityService;
+use DenLapaev\OpenStack\Common\Auth\Token;
+use DenLapaev\OpenStack\Common\Service\Builder;
+use DenLapaev\OpenStack\Test\Common\Service\Fixtures;
+use DenLapaev\OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class BuilderTest extends TestCase

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\ObjectStore\v1;
+namespace DenLapaev\OpenStack\ObjectStore\v1;
 
-use OpenStack\Common\Api\AbstractApi;
+use DenLapaev\OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

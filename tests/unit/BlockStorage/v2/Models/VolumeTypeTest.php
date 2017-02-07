@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\BlockStorage\v2\Models;
+namespace DenLapaev\OpenStack\Test\BlockStorage\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\BlockStorage\v2\Api;
-use OpenStack\BlockStorage\v2\Models\VolumeType;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\BlockStorage\v2\Api;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeType;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class VolumeTypeTest extends TestCase
 {

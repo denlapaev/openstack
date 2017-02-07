@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Identity\v3;
+namespace DenLapaev\OpenStack\Identity\v3;
 
-use OpenStack\Common\Api\AbstractApi;
+use DenLapaev\OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\Identity\v3\Models;
+namespace DenLapaev\OpenStack\Test\Identity\v3\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Identity\v3\Api;
-use OpenStack\Identity\v3\Models\Policy;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Identity\v3\Api;
+use DenLapaev\OpenStack\Identity\v3\Models\Policy;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class PolicyTest extends TestCase
 {

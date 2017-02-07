@@ -1,20 +1,20 @@
 <?php
 
-namespace OpenStack\Integration\Compute\v2;
+namespace DenLapaev\OpenStack\Integration\Compute\v2;
 
-use OpenStack\BlockStorage\v2\Models\Volume;
-use OpenStack\Compute\v2\Models\Flavor;
-use OpenStack\Compute\v2\Models\HypervisorStatistic;
-use OpenStack\Compute\v2\Models\Image;
-use OpenStack\Compute\v2\Models\Keypair;
-use OpenStack\Compute\v2\Models\Limit;
-use OpenStack\Compute\v2\Models\Server;
-use OpenStack\Integration\TestCase;
-use OpenStack\Integration\Utils;
-use OpenStack\Networking\v2\Models\Network;
-use OpenStack\Networking\v2\Models\Subnet;
-use OpenStack\Networking\v2\Service as NetworkService;
-use OpenStack\BlockStorage\v2\Service as BlockStorageService;
+use DenLapaev\OpenStack\BlockStorage\v2\Models\Volume;
+use DenLapaev\OpenStack\Compute\v2\Models\Flavor;
+use DenLapaev\OpenStack\Compute\v2\Models\HypervisorStatistic;
+use DenLapaev\OpenStack\Compute\v2\Models\Image;
+use DenLapaev\OpenStack\Compute\v2\Models\Keypair;
+use DenLapaev\OpenStack\Compute\v2\Models\Limit;
+use DenLapaev\OpenStack\Compute\v2\Models\Server;
+use DenLapaev\OpenStack\Integration\TestCase;
+use DenLapaev\OpenStack\Integration\Utils;
+use DenLapaev\OpenStack\Networking\v2\Models\Network;
+use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
+use DenLapaev\OpenStack\Networking\v2\Service as NetworkService;
+use DenLapaev\OpenStack\BlockStorage\v2\Service as BlockStorageService;
 
 class CoreTest extends TestCase
 {
@@ -66,7 +66,7 @@ class CoreTest extends TestCase
 
         return $this->networkService;
     }
-    
+
     private function getBlockStorageService()
     {
         if (!$this->blockStorageService) {
@@ -575,7 +575,7 @@ class CoreTest extends TestCase
             '{serverId}' => $this->serverId,
             '{secGroupName}' => 'default'
         ];
-        
+
         require_once  $this->sampleFile($replacements, 'servers/add_security_group.php');
 
         /**@var Server $server*/

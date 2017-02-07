@@ -3,9 +3,9 @@
 namespace unit\Images\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Images\v2\Api;
-use OpenStack\Images\v2\Models\Member;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Images\v2\Api;
+use DenLapaev\OpenStack\Images\v2\Models\Member;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class MemberTest extends TestCase
 {

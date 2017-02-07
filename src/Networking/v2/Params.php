@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Networking\v2;
+namespace DenLapaev\OpenStack\Networking\v2;
 
-use OpenStack\Common\Api\AbstractParams;
+use DenLapaev\OpenStack\Common\Api\AbstractParams;
 
 class Params extends AbstractParams
 {

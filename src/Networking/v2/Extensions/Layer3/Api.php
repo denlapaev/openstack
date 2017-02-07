@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\Networking\v2\Extensions\Layer3;
+namespace DenLapaev\OpenStack\Networking\v2\Extensions\Layer3;
 
-use OpenStack\Common\Api\AbstractApi;
+use DenLapaev\OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

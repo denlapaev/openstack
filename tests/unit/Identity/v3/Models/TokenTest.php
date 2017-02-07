@@ -1,10 +1,10 @@
 <?php
 
-namespace OpenStack\Test\Identity\v3\Models;
+namespace DenLapaev\OpenStack\Test\Identity\v3\Models;
 
-use OpenStack\Identity\v3\Api;
-use OpenStack\Identity\v3\Models\Token;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Identity\v3\Api;
+use DenLapaev\OpenStack\Identity\v3\Models\Token;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class TokenTest extends TestCase
 {

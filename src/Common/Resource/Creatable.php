@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Resource;
+namespace DenLapaev\OpenStack\Common\Resource;
 
 /**
  * Represents a resource that can be created.
  *
- * @package OpenStack\Common\Resource
+ * @package DenLapaev\OpenStack\Common\Resource
  */
 interface Creatable
 {

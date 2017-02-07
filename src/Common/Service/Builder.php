@@ -1,20 +1,20 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Service;
+namespace DenLapaev\OpenStack\Common\Service;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Middleware as GuzzleMiddleware;
-use OpenStack\Common\Auth\IdentityService;
-use OpenStack\Common\Auth\Token;
-use OpenStack\Common\Transport\HandlerStack;
-use OpenStack\Common\Transport\Middleware;
-use OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Common\Auth\IdentityService;
+use DenLapaev\OpenStack\Common\Auth\Token;
+use DenLapaev\OpenStack\Common\Transport\HandlerStack;
+use DenLapaev\OpenStack\Common\Transport\Middleware;
+use DenLapaev\OpenStack\Common\Transport\Utils;
 
 /**
  * A Builder for easily creating OpenStack services.
  *
- * @package OpenStack\Common\Service
+ * @package DenLapaev\OpenStack\Common\Service
  */
 class Builder
 {

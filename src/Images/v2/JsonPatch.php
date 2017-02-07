@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Images\v2;
+namespace DenLapaev\OpenStack\Images\v2;
 
 class JsonPatch extends \OpenStack\Common\JsonSchema\JsonPatch
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace OpenStack\Test\Common\Api;
+namespace DenLapaev\OpenStack\Test\Common\Api;
 
-use OpenStack\Common\Api\Parameter;
-use OpenStack\Test\Fixtures\ComputeV2Api;
+use DenLapaev\OpenStack\Common\Api\Parameter;
+use DenLapaev\OpenStack\Test\Fixtures\ComputeV2Api;
 
 class ParameterTest extends \PHPUnit_Framework_TestCase
 {

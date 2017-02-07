@@ -1,10 +1,10 @@
 <?php
 
-use OpenStack\Compute\v2\Models\Keypair;
+use DenLapaev\OpenStack\Compute\v2\Models\Keypair;
 
 require 'vendor/autoload.php';
 
-$openstack = new OpenStack\OpenStack([
+$openstack = new DenLapaev\OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => [

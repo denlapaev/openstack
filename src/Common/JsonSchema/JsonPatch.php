@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\JsonSchema;
+namespace DenLapaev\OpenStack\Common\JsonSchema;
 
 class JsonPatch
 {

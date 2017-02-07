@@ -1,12 +1,12 @@
 <?php
 
-namespace OpenStack\Test\Common\Transport;
+namespace DenLapaev\OpenStack\Test\Common\Transport;
 
-use OpenStack\Common\Api\Operation;
-use OpenStack\Common\Api\Parameter;
-use OpenStack\Common\Transport\JsonSerializer;
-use OpenStack\Common\Transport\RequestSerializer;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Common\Api\Operation;
+use DenLapaev\OpenStack\Common\Api\Parameter;
+use DenLapaev\OpenStack\Common\Transport\JsonSerializer;
+use DenLapaev\OpenStack\Common\Transport\RequestSerializer;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class RequestSerializerTest extends TestCase
 {

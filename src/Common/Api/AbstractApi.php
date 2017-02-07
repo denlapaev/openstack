@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Api;
+namespace DenLapaev\OpenStack\Common\Api;
 
 abstract class AbstractApi implements ApiInterface
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace OpenStack\Test\Common;
+namespace DenLapaev\OpenStack\Test\Common;
 
 class DateTime extends \DateTime
 {

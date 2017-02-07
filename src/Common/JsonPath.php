@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common;
+namespace DenLapaev\OpenStack\Common;
 
 /**
  * This class allows arbitrary data structures to be inserted into, and extracted from, deep arrays
@@ -20,7 +20,7 @@ namespace OpenStack\Common;
  * $val = $jsonPath->get('foo.bar.baz');
  * </code></pre>
  *
- * @package OpenStack\Common
+ * @package DenLapaev\OpenStack\Common
  */
 class JsonPath
 {

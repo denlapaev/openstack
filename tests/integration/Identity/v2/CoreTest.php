@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\integration\Identity\v2;
+namespace DenLapaev\OpenStack\integration\Identity\v2;
 
-use OpenStack\Integration\TestCase;
+use DenLapaev\OpenStack\Integration\TestCase;
 
 class CoreTest extends TestCase
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace OpenStack\Test\Common\Resource;
+namespace DenLapaev\OpenStack\Test\Common\Resource;
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Uri;
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Resource\ResourceInterface;
-use OpenStack\Test\Common\Service\Fixtures\Api;
-use OpenStack\Test\Common\Service\Fixtures\Models\Foo;
-use OpenStack\Test\Common\Service\Fixtures\Service;
-use OpenStack\Test\TestCase;
-use OpenStack\Test\Fixtures\ComputeV2Api;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Resource\ResourceInterface;
+use DenLapaev\OpenStack\Test\Common\Service\Fixtures\Api;
+use DenLapaev\OpenStack\Test\Common\Service\Fixtures\Models\Foo;
+use DenLapaev\OpenStack\Test\Common\Service\Fixtures\Service;
+use DenLapaev\OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Test\Fixtures\ComputeV2Api;
 
 class OperatorResourceTest extends TestCase
 {

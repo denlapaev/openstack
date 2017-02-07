@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\Integration;
+namespace DenLapaev\OpenStack\Integration;
 
-use OpenStack\Common\Resource\Deletable;
+use DenLapaev\OpenStack\Common\Resource\Deletable;
 use Psr\Log\LoggerInterface;
 
 abstract class TestCase extends \PHPUnit_Framework_TestCase implements TestInterface

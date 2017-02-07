@@ -1,8 +1,8 @@
 <?php
 
-namespace OpenStack\Test\Common\Service\Fixtures\Models;
+namespace DenLapaev\OpenStack\Test\Common\Service\Fixtures\Models;
 
-use OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
 
 class Foo extends OperatorResource
 {

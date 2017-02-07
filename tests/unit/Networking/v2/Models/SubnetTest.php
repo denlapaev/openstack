@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\Subneting\v2\Models;
+namespace DenLapaev\OpenStack\Test\Subneting\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Networking\v2\Api;
-use OpenStack\Networking\v2\Models\Subnet;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Networking\v2\Api;
+use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class SubnetTest extends TestCase
 {

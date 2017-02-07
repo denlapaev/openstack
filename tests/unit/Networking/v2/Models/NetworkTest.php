@@ -1,11 +1,11 @@
 <?php
 
-namespace OpenStack\Test\Networking\v2\Models;
+namespace DenLapaev\OpenStack\Test\Networking\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Networking\v2\Api;
-use OpenStack\Networking\v2\Models\Network;
-use OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Networking\v2\Api;
+use DenLapaev\OpenStack\Networking\v2\Models\Network;
+use DenLapaev\OpenStack\Test\TestCase;
 
 class NetworkTest extends TestCase
 {

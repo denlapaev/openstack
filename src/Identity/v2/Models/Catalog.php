@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Identity\v2\Models;
+namespace DenLapaev\OpenStack\Identity\v2\Models;
 
-use OpenStack\Common\Resource\OperatorResource;
-use OpenStack\Common\Transport\Utils;
+use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use DenLapaev\OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Represents an Identity v2 service catalog.
  *
- * @package OpenStack\Identity\v2\Models
+ * @package DenLapaev\OpenStack\Identity\v2\Models
  */
 class Catalog extends OperatorResource implements \OpenStack\Common\Auth\Catalog
 {

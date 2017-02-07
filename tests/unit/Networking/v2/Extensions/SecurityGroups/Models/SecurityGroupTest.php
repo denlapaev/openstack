@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Test\Networking\v2\Extensions\SecurityGroups\Models;
+namespace DenLapaev\OpenStack\Test\Networking\v2\Extensions\SecurityGroups\Models;
 
 use GuzzleHttp\Psr7\Response;
-use OpenStack\Test\TestCase;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Api;
-use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use DenLapaev\OpenStack\Test\TestCase;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Api;
+use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
 
 class SecurityGroupTest extends TestCase
 {

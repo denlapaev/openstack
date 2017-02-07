@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace OpenStack\Common\Auth;
+namespace DenLapaev\OpenStack\Common\Auth;
 
 use function GuzzleHttp\Psr7\modify_request;
 use Psr\Http\Message\RequestInterface;
