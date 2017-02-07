@@ -11,7 +11,7 @@ use Psr\Http\Message\ResponseInterface;
  *
  * @package DenLapaev\OpenStack\Identity\v2\Models
  */
-class Catalog extends OperatorResource implements \DenLapaev\OpenStack\Common\Auth\Catalog
+class Catalog extends OperatorResource implements \OpenStack\Common\Auth\Catalog
 {
     const DEFAULT_URL_TYPE = 'publicURL';
 

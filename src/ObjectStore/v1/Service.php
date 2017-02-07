@@ -8,7 +8,7 @@ use DenLapaev\OpenStack\ObjectStore\v1\Models\Account;
 use DenLapaev\OpenStack\ObjectStore\v1\Models\Container;
 
 /**
- * @property \DenLapaev\OpenStack\ObjectStore\v1\Api $api
+ * @property \OpenStack\ObjectStore\v1\Api $api
  */
 class Service extends AbstractService
 {
@@ -25,7 +25,7 @@ class Service extends AbstractService
     /**
      * Retrieves a collection of container resources in a generator format.
      *
-     * @param array         $options {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::getAccount}
+     * @param array         $options {@see \OpenStack\ObjectStore\v1\Api::getAccount}
      * @param callable|null $mapFn   Allows a function to be mapped over each element in the collection.
      *
      * @return \Generator
@@ -52,7 +52,7 @@ class Service extends AbstractService
     /**
      * Creates a new container according to the values provided.
      *
-     * @param array $data {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::putContainer}
+     * @param array $data {@see \OpenStack\ObjectStore\v1\Api::putContainer}
      *
      * @return Container
      */

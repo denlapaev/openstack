@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \DenLapaev\OpenStack\Networking\v2\Api $api
+ * @property \OpenStack\Networking\v2\Api $api
  */
 class Port extends OperatorResource implements Creatable, Updateable, Deletable, Listable, Retrievable
 {

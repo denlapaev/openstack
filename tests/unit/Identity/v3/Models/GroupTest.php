@@ -45,7 +45,7 @@ class GroupTest extends TestCase
 
         $this->setupMock('POST', 'groups', ['group' => $userJson], [], 'group');
 
-        /** @var $group \DenLapaev\OpenStack\Identity\v3\Models\Group */
+        /** @var $group \OpenStack\Identity\v3\Models\Group */
         $group = $this->group->create($userOptions);
 
         $this->assertInstanceOf(Group::class, $group);

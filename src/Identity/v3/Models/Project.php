@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
 class Project extends OperatorResource implements Creatable, Retrievable, Listable, Updateable, Deletable
 {
@@ -47,7 +47,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postProjects}
+     * @param array $data {@see \OpenStack\Identity\v3\Api::postProjects}
      */
     public function create(array $data): Creatable
     {
@@ -83,7 +83,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getProjectUserRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getProjectUserRoles}
      *
      * @return \Generator
      */
@@ -94,7 +94,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::putProjectUserRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::putProjectUserRole}
      */
     public function grantUserRole(array $options)
     {
@@ -102,7 +102,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::headProjectUserRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::headProjectUserRole}
      *
      * @return bool
      */
@@ -117,7 +117,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::deleteProjectUserRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::deleteProjectUserRole}
      */
     public function revokeUserRole(array $options)
     {
@@ -125,7 +125,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getProjectGroupRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getProjectGroupRoles}
      *
      * @return \Generator
      */
@@ -136,7 +136,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::putProjectGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::putProjectGroupRole}
      */
     public function grantGroupRole(array $options)
     {
@@ -144,7 +144,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::headProjectGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::headProjectGroupRole}
      *
      * @return bool
      */
@@ -159,7 +159,7 @@ class Project extends OperatorResource implements Creatable, Retrievable, Listab
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::deleteProjectGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::deleteProjectGroupRole}
      */
     public function revokeGroupRole(array $options)
     {

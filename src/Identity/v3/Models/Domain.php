@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
 class Domain extends OperatorResource implements Creatable, Listable, Retrievable, Updateable, Deletable
 {
@@ -36,7 +36,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postDomains}
+     * @param array $data {@see \OpenStack\Identity\v3\Api::postDomains}
      */
     public function create(array $data): Creatable
     {
@@ -71,7 +71,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getUserRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getUserRoles}
      *
      * @return \Generator
      */
@@ -82,7 +82,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::putUserRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::putUserRoles}
      */
     public function grantUserRole(array $options = [])
     {
@@ -90,7 +90,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::headUserRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::headUserRole}
      *
      * @return bool
      */
@@ -105,7 +105,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::deleteUserRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::deleteUserRole}
      */
     public function revokeUserRole(array $options = [])
     {
@@ -113,7 +113,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getGroupRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getGroupRoles}
      *
      * @return \Generator
      */
@@ -124,7 +124,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::putGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::putGroupRole}
      */
     public function grantGroupRole(array $options = [])
     {
@@ -132,7 +132,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::headGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::headGroupRole}
      *
      * @return bool
      */
@@ -147,7 +147,7 @@ class Domain extends OperatorResource implements Creatable, Listable, Retrievabl
     }
 
     /**
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::deleteGroupRole}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::deleteGroupRole}
      */
     public function revokeGroupRole(array $options = [])
     {

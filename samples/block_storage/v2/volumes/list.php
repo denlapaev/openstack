@@ -14,5 +14,5 @@ $service = $openstack->blockStorageV2();
 $volumes = $service->listVolumes();
 
 foreach ($volumes as $volume) {
-    /** @var $volume \DenLapaev\OpenStack\BlockStorage\v2\Models\Volume */
+    /** @var $volume \OpenStack\BlockStorage\v2\Models\Volume */
 }

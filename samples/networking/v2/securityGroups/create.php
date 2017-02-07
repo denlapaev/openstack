@@ -14,7 +14,7 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 
 $networking = $openstack->networkingV2ExtSecGroups();
 
-/** @var \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
+/** @var \OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
 $secGroup = $networking->createSecurityGroup([
     'name'        => 'new-webservers',
     'description' => 'security group for webservers',

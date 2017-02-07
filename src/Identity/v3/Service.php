@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Identity\v3\Models;
 /**
  * Represents the Keystone v3 service.
  *
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
 class Service extends AbstractService implements IdentityService
 {
@@ -23,7 +23,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Authenticates credentials, giving back a token and a base URL for the service.
      *
-     * @param  array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postTokens}
+     * @param  array $options {@see \OpenStack\Identity\v3\Api::postTokens}
      *
      * @return array Returns a {@see Models\Token} as the first element, a string base URL as the second
      */
@@ -49,7 +49,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Generates a new authentication token
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postTokens}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postTokens}
      *
      * @return Models\Token
      */
@@ -102,7 +102,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new service according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postServices}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postServices}
      *
      * @return Models\Service
      */
@@ -116,7 +116,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getServices}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getServices}
      *
      * @return \Generator
      */
@@ -141,7 +141,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new endpoint according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postEndpoints}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postEndpoints}
      *
      * @return Models\Endpoint
      */
@@ -168,7 +168,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getEndpoints}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getEndpoints}
      *
      * @return \Generator
      */
@@ -180,7 +180,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new domain according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postDomains}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postDomains}
      *
      * @return Models\Domain
      */
@@ -194,7 +194,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getDomains}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getDomains}
      *
      * @return \Generator
      */
@@ -219,7 +219,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new project according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postProjects}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postProjects}
      *
      * @return Models\Project
      */
@@ -233,7 +233,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getProjects}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getProjects}
      *
      * @return \Generator
      */
@@ -258,7 +258,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new user according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postUsers}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postUsers}
      *
      * @return Models\User
      */
@@ -272,7 +272,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getUsers}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getUsers}
      *
      * @return \Generator
      */
@@ -297,7 +297,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new group according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postGroups}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postGroups}
      *
      * @return Models\Group
      */
@@ -311,7 +311,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getGroups}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getGroups}
      *
      * @return \Generator
      */
@@ -336,7 +336,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new credential according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postCredentials}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postCredentials}
      *
      * @return Models\Credential
      */
@@ -373,7 +373,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new role according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postRoles}
      *
      * @return Models\Role
      */
@@ -387,7 +387,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getRoles}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getRoles}
      *
      * @return \Generator
      */
@@ -401,7 +401,7 @@ class Service extends AbstractService implements IdentityService
      * yield can be accessed using a foreach loop. Often the API will not return the full state of the resource in
      * collections; you will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getRoleAssignments}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getRoleAssignments}
      *
      * @return \Generator
      */
@@ -413,7 +413,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Creates a new policy according to the provided options.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::postPolicies}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::postPolicies}
      *
      * @return Models\Policy
      */
@@ -427,7 +427,7 @@ class Service extends AbstractService implements IdentityService
      * accessed using a foreach loop. Often the API will not return the full state of the resource in collections; you
      * will need to use retrieve() to pull in the full state of the remote resource from the API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getPolicies}
+     * @param array $options {@see \OpenStack\Identity\v3\Api::getPolicies}
      *
      * @return \Generator
      */

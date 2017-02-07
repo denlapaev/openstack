@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Auth\AuthHandler;
 class MiddlewareTest extends TestCase
 {
     /**
-     * @expectedException \DenLapaev\OpenStack\Common\Error\BadResponseError
+     * @expectedException \OpenStack\Common\Error\BadResponseError
      */
     public function test_exception_is_thrown_for_4xx_statuses()
     {

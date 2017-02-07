@@ -10,7 +10,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
 class Policy extends OperatorResource implements Creatable, Listable, Retrievable, Updateable, Deletable
 {
@@ -40,7 +40,7 @@ class Policy extends OperatorResource implements Creatable, Listable, Retrievabl
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postPolicies}
+     * @param array $data {@see \OpenStack\Identity\v3\Api::postPolicies}
      */
     public function create(array $data): Creatable
     {

@@ -17,5 +17,5 @@ $networking = $openstack->networkingV2ExtSecGroups();
 $secGroups = $networking->listSecurityGroups();
 
 foreach ($secGroups as $secGroup) {
-    /** @var \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
+    /** @var \OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
 }

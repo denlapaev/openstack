@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 /**
  * Represents a Networking v2 Network.
  *
- * @property \DenLapaev\OpenStack\Networking\v2\Api $api
+ * @property \OpenStack\Networking\v2\Api $api
  */
 class Subnet extends OperatorResource implements Listable, Retrievable, Creatable, Deletable
 {
@@ -77,7 +77,7 @@ class Subnet extends OperatorResource implements Listable, Retrievable, Creatabl
     /**
      * Creates multiple subnets in a single request.
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Networking\v2\Api::postSubnets}
+     * @param array $data {@see \OpenStack\Networking\v2\Api::postSubnets}
      *
      * @return Subnet[]
      */
@@ -90,7 +90,7 @@ class Subnet extends OperatorResource implements Listable, Retrievable, Creatabl
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Networking\v2\Api::postSubnet}
+     * @param array $data {@see \OpenStack\Networking\v2\Api::postSubnet}
      */
     public function create(array $data): Creatable
     {

@@ -71,7 +71,7 @@ class CoreTest extends TestCase
             '{networkName}' => $this->randomStr(),
         ];
 
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile($replacements, 'networks/create.php');
         require_once $path;
 
@@ -92,7 +92,7 @@ class CoreTest extends TestCase
             '{newName}'   => $name,
         ];
 
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile($replacements, 'networks/update.php');
         require_once $path;
 
@@ -106,7 +106,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{networkId}' => $networkId];
 
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile($replacements, 'networks/get.php');
         require_once $path;
 
@@ -119,7 +119,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{networkId}' => $networkId];
 
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile($replacements, 'networks/delete.php');
         require_once $path;
 
@@ -128,7 +128,7 @@ class CoreTest extends TestCase
 
     private function createSubnetsAndDelete()
     {
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile(['{newName}' => $this->randomStr()], 'networks/create.php');
         require_once $path;
 
@@ -158,7 +158,7 @@ class CoreTest extends TestCase
 
     private function createSubnet()
     {
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile(['{newName}' => $this->randomStr()], 'networks/create.php');
         require_once $path;
 
@@ -167,7 +167,7 @@ class CoreTest extends TestCase
             '{networkId}'  => $network->id,
         ];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/create.php');
         require_once $path;
 
@@ -181,7 +181,7 @@ class CoreTest extends TestCase
 
     private function createSubnetWithGatewayIp()
     {
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile(['{newName}' => $this->randomStr()], 'networks/create.php');
         require_once $path;
 
@@ -189,7 +189,7 @@ class CoreTest extends TestCase
             '{networkId}' => $network->id,
         ];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/create_with_gateway_ip.php');
         require_once $path;
 
@@ -206,7 +206,7 @@ class CoreTest extends TestCase
 
     private function createSubnetWithHostRoutes()
     {
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile(['{newName}' => $this->randomStr()], 'networks/create.php');
         require_once $path;
 
@@ -214,7 +214,7 @@ class CoreTest extends TestCase
             '{networkId}' => $network->id,
         ];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/create_with_host_routes.php');
         require_once $path;
 
@@ -236,7 +236,7 @@ class CoreTest extends TestCase
             '{newName}'  => $name,
         ];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/update.php');
         require_once $path;
 
@@ -251,7 +251,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{subnetId}' => $subnetId];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/get.php');
         require_once $path;
 
@@ -264,7 +264,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{subnetId}' => $subnetId];
 
-        /** @var $subnet \DenLapaev\OpenStack\Networking\v2\Models\Subnet */
+        /** @var $subnet \OpenStack\Networking\v2\Models\Subnet */
         $path = $this->sampleFile($replacements, 'subnets/delete.php');
         require_once $path;
 
@@ -275,13 +275,13 @@ class CoreTest extends TestCase
     {
         $replacements = ['{newName}' => $this->randomStr()];
 
-        /** @var $network \DenLapaev\OpenStack\Networking\v2\Models\Network */
+        /** @var $network \OpenStack\Networking\v2\Models\Network */
         $path = $this->sampleFile($replacements, 'networks/create.php');
         require_once $path;
 
         $replacements = ['{networkId}' => $network->id];
 
-        /** @var $port \DenLapaev\OpenStack\Networking\v2\Models\Port */
+        /** @var $port \OpenStack\Networking\v2\Models\Port */
         $path = $this->sampleFile($replacements, 'ports/create.php');
         require_once $path;
         $this->assertInstanceOf(Port::class, $port);
@@ -297,16 +297,16 @@ class CoreTest extends TestCase
             $port->delete();
         }
 
-        /** @var $port \DenLapaev\OpenStack\Networking\v2\Models\Port */
+        /** @var $port \OpenStack\Networking\v2\Models\Port */
         $path = $this->sampleFile($replacements, 'ports/list.php');
         require_once $path;
 
-        /** @var $port \DenLapaev\OpenStack\Networking\v2\Models\Port */
+        /** @var $port \OpenStack\Networking\v2\Models\Port */
         $path = $this->sampleFile($replacements, 'ports/get.php');
         require_once $path;
         $this->assertInstanceOf(Port::class, $port);
 
-        /** @var $port \DenLapaev\OpenStack\Networking\v2\Models\Port */
+        /** @var $port \OpenStack\Networking\v2\Models\Port */
         $path = $this->sampleFile($replacements, 'ports/update.php');
         require_once $path;
         $this->assertInstanceOf(Port::class, $port);

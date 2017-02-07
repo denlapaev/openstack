@@ -8,7 +8,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @property \DenLapaev\OpenStack\ObjectStore\v1\Api $api
+ * @property \OpenStack\ObjectStore\v1\Api $api
  */
 class Account extends OperatorResource implements Retrievable, HasMetadata
 {

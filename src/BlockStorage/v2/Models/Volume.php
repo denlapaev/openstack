@@ -13,7 +13,7 @@ use DenLapaev\OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @property \DenLapaev\OpenStack\BlockStorage\v2\Api $api
+ * @property \OpenStack\BlockStorage\v2\Api $api
  */
 class Volume extends OperatorResource implements Creatable, Listable, Updateable, Deletable, Retrievable, HasMetadata
 {
@@ -81,7 +81,7 @@ class Volume extends OperatorResource implements Creatable, Listable, Updateable
     }
 
     /**
-     * @param array $userOptions {@see \DenLapaev\OpenStack\BlockStorage\v2\Api::postVolumes}
+     * @param array $userOptions {@see \OpenStack\BlockStorage\v2\Api::postVolumes}
      *
      * @return Creatable
      */

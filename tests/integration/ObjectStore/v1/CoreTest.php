@@ -11,7 +11,7 @@ class CoreTest extends TestCase
     private $service;
 
     /**
-     * @return \DenLapaev\OpenStack\ObjectStore\v1\Service
+     * @return \OpenStack\ObjectStore\v1\Service
      */
     protected function getService()
     {

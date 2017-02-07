@@ -41,7 +41,7 @@ class EndpointTest extends TestCase
 
         $this->setupMock('POST', 'endpoints', ['endpoint' => $userJson], [], 'endpoint');
 
-        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Endpoint */
+        /** @var $endpoint \OpenStack\Identity\v3\Models\Endpoint */
         $endpoint = $this->service->createEndpoint($userOptions);
 
         $this->assertInstanceOf(Endpoint::class, $endpoint);

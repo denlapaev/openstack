@@ -8,5 +8,5 @@ require_once $rootDir . '/vendor/autoload.php';
 
 $sampleDir = dirname(dirname(__DIR__)) . DIRECTORY_SEPARATOR . 'samples';
 
-$runner = new \DenLapaev\OpenStack\Integration\Runner($sampleDir, __DIR__, 'OpenStack\\Integration');
+$runner = new \OpenStack\Integration\Runner($sampleDir, __DIR__, 'OpenStack\\Integration');
 $runner->runServices();

@@ -12,6 +12,6 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
     'scope' => ['project' => ['id' => '{projectId}']]
 ]);
 
-/** @var \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $ip */
+/** @var \OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $ip */
 $ip = $openstack->networkingV2ExtLayer3()
                 ->getFloatingIp('{id}');

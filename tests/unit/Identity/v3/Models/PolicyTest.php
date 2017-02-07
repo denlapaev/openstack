@@ -39,7 +39,7 @@ class PolicyTest extends TestCase
 
         $this->setupMock('POST', 'policies', $userJson, [], 'policy');
 
-        /** @var $policy \DenLapaev\OpenStack\Identity\v3\Models\Policy */
+        /** @var $policy \OpenStack\Identity\v3\Models\Policy */
         $policy = $this->policy->create($userOptions);
 
         $this->assertInstanceOf(Policy::class, $policy);

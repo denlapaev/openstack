@@ -5,9 +5,9 @@ namespace DenLapaev\OpenStack\Identity\v3\Models;
 use DenLapaev\OpenStack\Common\Resource\OperatorResource;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
-class Catalog extends OperatorResource implements \DenLapaev\OpenStack\Common\Auth\Catalog
+class Catalog extends OperatorResource implements \OpenStack\Common\Auth\Catalog
 {
     /** @var []Service */
     public $services;

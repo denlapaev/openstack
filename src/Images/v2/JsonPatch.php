@@ -2,7 +2,7 @@
 
 namespace DenLapaev\OpenStack\Images\v2;
 
-class JsonPatch extends \DenLapaev\OpenStack\Common\JsonSchema\JsonPatch
+class JsonPatch extends \OpenStack\Common\JsonSchema\JsonPatch
 {
     public function disableRestrictedPropRemovals(array $diff, array $restrictedProps): array
     {

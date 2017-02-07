@@ -19,5 +19,5 @@ $data = [
     'publicKey' => '{publicKey}'
 ];
 
-/** @var \DenLapaev\OpenStack\Compute\v2\Models\Keypair $keypair */
+/** @var \OpenStack\Compute\v2\Models\Keypair $keypair */
 $keypair = $compute->createKeypair($data);

@@ -15,5 +15,5 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 $identity = $openstack->identityV3(['region' => '{region}']);
 
 foreach ($identity->listCredentials() as $credential) {
-    /** @var $credential \DenLapaev\OpenStack\Identity\v3\Models\Credential */
+    /** @var $credential \OpenStack\Identity\v3\Models\Credential */
 }

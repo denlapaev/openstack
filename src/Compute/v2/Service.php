@@ -13,7 +13,7 @@ use DenLapaev\OpenStack\Compute\v2\Models\Server;
 /**
  * Compute v2 service for OpenStack.
  *
- * @property \DenLapaev\OpenStack\Compute\v2\Api $api
+ * @property \OpenStack\Compute\v2\Api $api
  */
 class Service extends AbstractService
 {
@@ -21,9 +21,9 @@ class Service extends AbstractService
      * Create a new server resource. This operation will provision a new virtual machine on a host chosen by your
      * service API.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::postServer}
+     * @param array $options {@see \OpenStack\Compute\v2\Api::postServer}
      *
-     * @return \DenLapaev\OpenStack\Compute\v2\Models\Server
+     * @return \OpenStack\Compute\v2\Models\Server
      */
     public function createServer(array $options): Server
     {
@@ -35,7 +35,7 @@ class Service extends AbstractService
      *
      * @param bool     $detailed Determines whether detailed information will be returned. If FALSE is specified, only
      *                           the ID, name and links attributes are returned, saving bandwidth.
-     * @param array    $options  {@see \DenLapaev\OpenStack\Compute\v2\Api::getServers}
+     * @param array    $options  {@see \OpenStack\Compute\v2\Api::getServers}
      * @param callable $mapFn    A callable function that will be invoked on every iteration of the list.
      *
      * @return \Generator
@@ -56,7 +56,7 @@ class Service extends AbstractService
      * @param array $options An array of attributes that will be set on the {@see Server} object. The array keys need to
      *                       correspond to the class public properties.
      *
-     * @return \DenLapaev\OpenStack\Compute\v2\Models\Server
+     * @return \OpenStack\Compute\v2\Models\Server
      */
     public function getServer(array $options = []): Server
     {
@@ -68,7 +68,7 @@ class Service extends AbstractService
     /**
      * List flavors.
      *
-     * @param array    $options {@see \DenLapaev\OpenStack\Compute\v2\Api::getFlavors}
+     * @param array    $options {@see \OpenStack\Compute\v2\Api::getFlavors}
      * @param callable $mapFn   A callable function that will be invoked on every iteration of the list.
      *
      * @return \Generator
@@ -86,7 +86,7 @@ class Service extends AbstractService
      * @param array $options An array of attributes that will be set on the {@see Flavor} object. The array keys need to
      *                       correspond to the class public properties.
      *
-     * @return \DenLapaev\OpenStack\Compute\v2\Models\Flavor
+     * @return \OpenStack\Compute\v2\Models\Flavor
      */
     public function getFlavor(array $options = []): Flavor
     {
@@ -98,7 +98,7 @@ class Service extends AbstractService
     /**
      * Create a new flavor resource.
      *
-     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::postFlavors}
+     * @param array $options {@see \OpenStack\Compute\v2\Api::postFlavors}
      *
      * @return Flavor
      */
@@ -110,7 +110,7 @@ class Service extends AbstractService
     /**
      * List images.
      *
-     * @param array    $options {@see \DenLapaev\OpenStack\Compute\v2\Api::getImages}
+     * @param array    $options {@see \OpenStack\Compute\v2\Api::getImages}
      * @param callable $mapFn   A callable function that will be invoked on every iteration of the list.
      *
      * @return \Generator
@@ -128,7 +128,7 @@ class Service extends AbstractService
      * @param array $options An array of attributes that will be set on the {@see Image} object. The array keys need to
      *                       correspond to the class public properties.
      *
-     * @return \DenLapaev\OpenStack\Compute\v2\Models\Image
+     * @return \OpenStack\Compute\v2\Models\Image
      */
     public function getImage(array $options = []): Image
     {
@@ -140,7 +140,7 @@ class Service extends AbstractService
     /**
      * List key pairs.
      *
-     * @param array    $options {@see \DenLapaev\OpenStack\Compute\v2\Api::getKeyPairs}
+     * @param array    $options {@see \OpenStack\Compute\v2\Api::getKeyPairs}
      * @param callable $mapFn   A callable function that will be invoked on every iteration of the list.
      *
      * @return \Generator

@@ -13,7 +13,7 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * Represents a Compute v2 Image
  *
- * @property \DenLapaev\OpenStack\Compute\v2\Api $api
+ * @property \OpenStack\Compute\v2\Api $api
  */
 class Image extends OperatorResource implements Listable, Retrievable, Deletable, HasMetadata
 {
@@ -82,7 +82,7 @@ class Image extends OperatorResource implements Listable, Retrievable, Deletable
      * Resets all the metadata for this image with the values provided. All existing metadata keys
      * will either be replaced or removed.
      *
-     * @param array $metadata {@see \DenLapaev\OpenStack\Compute\v2\Api::putImageMetadata}
+     * @param array $metadata {@see \OpenStack\Compute\v2\Api::putImageMetadata}
      */
     public function resetMetadata(array $metadata)
     {
@@ -95,7 +95,7 @@ class Image extends OperatorResource implements Listable, Retrievable, Deletable
      * referenced in the user options will be replaced with the user's new values. All other
      * existing keys will remain unaffected.
      *
-     * @param array $metadata {@see \DenLapaev\OpenStack\Compute\v2\Api::postImageMetadata}
+     * @param array $metadata {@see \OpenStack\Compute\v2\Api::postImageMetadata}
      */
     public function mergeMetadata(array $metadata)
     {
@@ -106,7 +106,7 @@ class Image extends OperatorResource implements Listable, Retrievable, Deletable
     /**
      * Retrieve the value for a specific metadata key.
      *
-     * @param string $key {@see \DenLapaev\OpenStack\Compute\v2\Api::getImageMetadataKey}
+     * @param string $key {@see \OpenStack\Compute\v2\Api::getImageMetadataKey}
      *
      * @return mixed
      */
@@ -121,7 +121,7 @@ class Image extends OperatorResource implements Listable, Retrievable, Deletable
     /**
      * Remove a specific metadata key.
      *
-     * @param string $key {@see \DenLapaev\OpenStack\Compute\v2\Api::deleteImageMetadataKey}
+     * @param string $key {@see \OpenStack\Compute\v2\Api::deleteImageMetadataKey}
      */
     public function deleteMetadataItem(string $key)
     {

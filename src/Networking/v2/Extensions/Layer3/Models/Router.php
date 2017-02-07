@@ -71,7 +71,7 @@ class Router extends OperatorResource implements Listable, Creatable, Retrievabl
     }
 
     /**
-     * @param array $userOptions {@see \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api::putAddInterface}
+     * @param array $userOptions {@see \OpenStack\Networking\v2\Extensions\Layer3\Api::putAddInterface}
      */
     public function addInterface(array $userOptions)
     {
@@ -80,7 +80,7 @@ class Router extends OperatorResource implements Listable, Creatable, Retrievabl
     }
 
     /**
-     * @param array $userOptions {@see \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api::putRemoveInterface}
+     * @param array $userOptions {@see \OpenStack\Networking\v2\Extensions\Layer3\Api::putRemoveInterface}
      */
     public function removeInterface(array $userOptions)
     {

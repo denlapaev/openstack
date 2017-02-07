@@ -8,7 +8,7 @@ use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeType;
 use DenLapaev\OpenStack\Common\Service\AbstractService;
 
 /**
- * @property \DenLapaev\OpenStack\BlockStorage\v2\Api $api
+ * @property \OpenStack\BlockStorage\v2\Api $api
  */
 class Service extends AbstractService
 {

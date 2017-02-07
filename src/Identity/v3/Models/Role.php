@@ -8,7 +8,7 @@ use DenLapaev\OpenStack\Common\Resource\Deletable;
 use DenLapaev\OpenStack\Common\Resource\Listable;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
 class Role extends OperatorResource implements Creatable, Listable, Deletable
 {
@@ -27,7 +27,7 @@ class Role extends OperatorResource implements Creatable, Listable, Deletable
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postRoles}
+     * @param array $data {@see \OpenStack\Identity\v3\Api::postRoles}
      */
     public function create(array $data): Creatable
     {

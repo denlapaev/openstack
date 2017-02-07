@@ -20,6 +20,6 @@ $identity = $openstack->identityV3(['region' => '{region}']);
 
 $endpoint = $identity->getEndpoint('{endpointId}');
 
-$endpoint->interface = \DenLapaev\OpenStack\Identity\v3\Enum::INTERFACE_PUBLIC;
+$endpoint->interface = \OpenStack\Identity\v3\Enum::INTERFACE_PUBLIC;
 
 $endpoint->update();

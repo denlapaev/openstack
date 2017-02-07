@@ -14,7 +14,7 @@ use DenLapaev\OpenStack\Images\v2\JsonPatch;
 use Psr\Http\Message\StreamInterface;
 
 /**
- * @property \DenLapaev\OpenStack\Images\v2\Api $api
+ * @property \OpenStack\Images\v2\Api $api
  */
 class Image extends OperatorResource implements Creatable, Listable, Retrievable, Deletable
 {

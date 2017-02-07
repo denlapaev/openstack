@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Resource\Updateable;
 /**
  * Represents a SecurityGroup resource in the Network v2 service
  *
- * @property \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Api $api
+ * @property \OpenStack\Networking\v2\Extensions\SecurityGroups\Api $api
  */
 class SecurityGroup extends OperatorResource implements Creatable, Listable, Deletable, Retrievable, Updateable
 {

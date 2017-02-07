@@ -8,9 +8,9 @@ use DenLapaev\OpenStack\Common\Resource\Creatable;
 use DenLapaev\OpenStack\Common\Resource\Retrievable;
 
 /**
- * @property \DenLapaev\OpenStack\Identity\v3\Api $api
+ * @property \OpenStack\Identity\v3\Api $api
  */
-class Token extends OperatorResource implements Creatable, Retrievable, \DenLapaev\OpenStack\Common\Auth\Token
+class Token extends OperatorResource implements Creatable, Retrievable, \OpenStack\Common\Auth\Token
 {
     /** @var array */
     public $methods;
@@ -86,7 +86,7 @@ class Token extends OperatorResource implements Creatable, Retrievable, \DenLapa
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postTokens}
+     * @param array $data {@see \OpenStack\Identity\v3\Api::postTokens}
      */
     public function create(array $data): Creatable
     {

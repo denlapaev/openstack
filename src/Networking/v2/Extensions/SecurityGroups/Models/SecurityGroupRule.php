@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 /**
  * Represents a SecurityGroupRule resource in the Network v2 service
  *
- * @property \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Api $api
+ * @property \OpenStack\Networking\v2\Extensions\SecurityGroups\Api $api
  */
 class SecurityGroupRule extends OperatorResource implements Creatable, Listable, Deletable, Retrievable
 {

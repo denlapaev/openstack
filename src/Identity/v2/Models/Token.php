@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Resource\ValueResource;
  *
  * @package DenLapaev\OpenStack\Identity\v2\Models
  */
-class Token extends OperatorResource implements \DenLapaev\OpenStack\Common\Auth\Token
+class Token extends OperatorResource implements \OpenStack\Common\Auth\Token
 {
     /** @var \DateTimeImmutable */
     public $issuedAt;

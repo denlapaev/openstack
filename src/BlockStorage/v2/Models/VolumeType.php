@@ -9,7 +9,7 @@ use DenLapaev\OpenStack\Common\Resource\Listable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \DenLapaev\OpenStack\BlockStorage\v2\Api $api
+ * @property \OpenStack\BlockStorage\v2\Api $api
  */
 class VolumeType extends OperatorResource implements Listable, Creatable, Updateable, Deletable
 {
@@ -23,7 +23,7 @@ class VolumeType extends OperatorResource implements Listable, Creatable, Update
     protected $resourcesKey = 'volume_types';
 
     /**
-     * @param array $userOptions {@see \DenLapaev\OpenStack\BlockStorage\v2\Api::postTypes}
+     * @param array $userOptions {@see \OpenStack\BlockStorage\v2\Api::postTypes}
      *
      * @return Creatable
      */
