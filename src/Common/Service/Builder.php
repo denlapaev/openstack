@@ -41,7 +41,7 @@ class Builder
      *                               service-specific options passed in.
      * @param string $rootNamespace  API classes' root namespace
      */
-    public function __construct(array $globalOptions = [], $rootNamespace = 'DenLapaev\\OpenStack')
+    public function __construct(array $globalOptions = [], $rootNamespace = 'OpenStack')
     {
         $this->globalOptions = $globalOptions;
         $this->rootNamespace = $rootNamespace;
