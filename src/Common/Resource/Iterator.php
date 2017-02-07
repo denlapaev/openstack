@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Resource;
+namespace OpenStack\Common\Resource;
 
-use DenLapaev\OpenStack\Common\Transport\Utils;
+use OpenStack\Common\Transport\Utils;
 
 class Iterator
 {

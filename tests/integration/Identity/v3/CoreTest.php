@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\integration\Identity\v3;
+namespace OpenStack\integration\Identity\v3;
 
-use DenLapaev\OpenStack\Identity\v3\Models;
-use DenLapaev\OpenStack\Integration\TestCase;
-use DenLapaev\OpenStack\Integration\Utils;
+use OpenStack\Identity\v3\Models;
+use OpenStack\Integration\TestCase;
+use OpenStack\Integration\Utils;
 
 class CoreTest extends TestCase
 {

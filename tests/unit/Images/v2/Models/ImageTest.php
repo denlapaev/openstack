@@ -1,14 +1,14 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Images\v2\Models;
+namespace OpensTack\Test\Images\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
 use GuzzleHttp\Psr7\Stream;
 use GuzzleHttp\Psr7\Uri;
-use DenLapaev\OpenStack\Images\v2\Api;
-use DenLapaev\OpenStack\Images\v2\Models\Member;
-use DenLapaev\OpenStack\Images\v2\Models\Image;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Images\v2\Api;
+use OpenStack\Images\v2\Models\Member;
+use OpenStack\Images\v2\Models\Image;
+use OpenStack\Test\TestCase;
 
 class ImageTest extends TestCase
 {

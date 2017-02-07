@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Api;
+namespace OpenStack\Test\Common\Api;
 
-use DenLapaev\OpenStack\Common\Api\Operation;
-use DenLapaev\OpenStack\Common\Api\Parameter;
-use DenLapaev\OpenStack\Test\Fixtures\ComputeV2Api;
+use OpenStack\Common\Api\Operation;
+use OpenStack\Common\Api\Parameter;
+use OpenStack\Test\Fixtures\ComputeV2Api;
 
 class OperationTest extends \PHPUnit_Framework_TestCase
 {

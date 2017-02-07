@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Service\Fixtures;
+namespace OpenStack\Test\Common\Service\Fixtures;
 
-use DenLapaev\OpenStack\Common\Api\AbstractApi;
+use OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

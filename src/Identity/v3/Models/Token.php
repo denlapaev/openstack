@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v3\Models;
+namespace OpenStack\Identity\v3\Models;
 
 use Psr\Http\Message\ResponseInterface;
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\Creatable;
-use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Retrievable;
 
 /**
  * @property \OpenStack\Identity\v3\Api $api

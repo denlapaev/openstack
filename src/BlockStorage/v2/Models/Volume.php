@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
-namespace DenLapaev\OpenStack\BlockStorage\v2\Models;
+namespace OpenStack\BlockStorage\v2\Models;
 
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\Creatable;
-use DenLapaev\OpenStack\Common\Resource\Deletable;
-use DenLapaev\OpenStack\Common\Resource\HasMetadata;
-use DenLapaev\OpenStack\Common\Resource\HasWaiterTrait;
-use DenLapaev\OpenStack\Common\Resource\Listable;
-use DenLapaev\OpenStack\Common\Resource\Retrievable;
-use DenLapaev\OpenStack\Common\Resource\Updateable;
-use DenLapaev\OpenStack\Common\Transport\Utils;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
+use OpenStack\Common\Resource\HasMetadata;
+use OpenStack\Common\Resource\HasWaiterTrait;
+use OpenStack\Common\Resource\Listable;
+use OpenStack\Common\Resource\Retrievable;
+use OpenStack\Common\Resource\Updateable;
+use OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 /**

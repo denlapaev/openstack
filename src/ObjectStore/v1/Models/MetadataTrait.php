@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\ObjectStore\v1\Models;
+namespace OpenStack\ObjectStore\v1\Models;
 
 use Psr\Http\Message\ResponseInterface;
 

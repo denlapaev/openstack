@@ -1,14 +1,14 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Compute\v2\Models;
+namespace OpenStack\Test\Compute\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeAttachment;
-use DenLapaev\OpenStack\Compute\v2\Api;
-use DenLapaev\OpenStack\Compute\v2\Models\Flavor;
-use DenLapaev\OpenStack\Compute\v2\Models\Server;
-use DenLapaev\OpenStack\Test\TestCase;
-use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use OpenStack\BlockStorage\v2\Models\VolumeAttachment;
+use OpenStack\Compute\v2\Api;
+use OpenStack\Compute\v2\Models\Flavor;
+use OpenStack\Compute\v2\Models\Server;
+use OpenStack\Test\TestCase;
+use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
 
 class ServerTest extends TestCase
 {

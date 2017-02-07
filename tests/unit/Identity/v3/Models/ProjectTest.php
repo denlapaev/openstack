@@ -1,12 +1,12 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Identity\v3\Models;
+namespace OpenStack\Test\Identity\v3\Models;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Identity\v3\Api;
-use DenLapaev\OpenStack\Identity\v3\Models\Project;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Identity\v3\Api;
+use OpenStack\Identity\v3\Models\Project;
+use OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class ProjectTest extends TestCase

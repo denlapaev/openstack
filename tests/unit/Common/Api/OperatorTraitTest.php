@@ -1,16 +1,16 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Api;
+namespace OpenStack\Test\Common\Api;
 
 use function GuzzleHttp\Psr7\uri_for;
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Api\Operation;
-use DenLapaev\OpenStack\Common\Api\OperatorTrait;
-use DenLapaev\OpenStack\Common\Resource\AbstractResource;
-use DenLapaev\OpenStack\Common\Resource\ResourceInterface;
-use DenLapaev\OpenStack\Test\Fixtures\ComputeV2Api;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\Api\Operation;
+use OpenStack\Common\Api\OperatorTrait;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\ResourceInterface;
+use OpenStack\Test\Fixtures\ComputeV2Api;
+use OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class OperatorTraitTest extends TestCase

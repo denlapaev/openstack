@@ -3,12 +3,12 @@
 namespace unit\BlockStorage\v2;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\BlockStorage\v2\Api;
-use DenLapaev\OpenStack\BlockStorage\v2\Models\Snapshot;
-use DenLapaev\OpenStack\BlockStorage\v2\Models\Volume;
-use DenLapaev\OpenStack\BlockStorage\v2\Models\VolumeType;
-use DenLapaev\OpenStack\BlockStorage\v2\Service;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\BlockStorage\v2\Api;
+use OpenStack\BlockStorage\v2\Models\Snapshot;
+use OpenStack\BlockStorage\v2\Models\Volume;
+use OpenStack\BlockStorage\v2\Models\VolumeType;
+use OpenStack\BlockStorage\v2\Service;
+use OpenStack\Test\TestCase;
 
 class ServiceTest extends TestCase
 {

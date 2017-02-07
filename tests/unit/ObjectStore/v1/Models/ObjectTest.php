@@ -1,12 +1,12 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\ObjectStore\v1\Models;
+namespace OpenStack\Test\ObjectStore\v1\Models;
 
 use function GuzzleHttp\Psr7\uri_for;
 use GuzzleHttp\Psr7\Stream;
-use DenLapaev\OpenStack\ObjectStore\v1\Api;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Object;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\ObjectStore\v1\Api;
+use OpenStack\ObjectStore\v1\Models\Object;
+use OpenStack\Test\TestCase;
 
 class ObjectTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Transport;
+namespace OpenStack\Common\Transport;
 
 use function GuzzleHttp\uri_template;
 use function GuzzleHttp\Psr7\build_query;
 use function GuzzleHttp\Psr7\modify_request;
-use DenLapaev\OpenStack\Common\Api\Operation;
-use DenLapaev\OpenStack\Common\Api\Parameter;
+use OpenStack\Common\Api\Operation;
+use OpenStack\Common\Api\Parameter;
 
 class RequestSerializer
 {

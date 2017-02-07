@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v2\Models;
+namespace OpenStack\Identity\v2\Models;
 
-use DenLapaev\OpenStack\Common\HydratorStrategyTrait;
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\HydratorStrategyTrait;
+use OpenStack\Common\Resource\OperatorResource;
 
 /**
  * Represents an Identity v2 catalog entry endpoint.
  *
- * @package DenLapaev\OpenStack\Identity\v2\Models
+ * @package OpenStack\Identity\v2\Models
  */
 class Endpoint extends OperatorResource
 {

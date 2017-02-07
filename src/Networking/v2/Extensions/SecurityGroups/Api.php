@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups;
+namespace OpenStack\Networking\v2\Extensions\SecurityGroups;
 
-use DenLapaev\OpenStack\Common\Api\AbstractApi;
+use OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

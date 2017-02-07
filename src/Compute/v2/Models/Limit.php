@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Compute\v2\Models;
+namespace OpenStack\Compute\v2\Models;
 
-use DenLapaev\OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 
 /**
  * Represents a Compute v2 Limit

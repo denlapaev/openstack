@@ -1,9 +1,9 @@
 <?php
 
-namespace DenLapaev\OpenStack\integration\ObjectStore\v1;
+namespace OpenStack\integration\ObjectStore\v1;
 
-use DenLapaev\OpenStack\Integration\TestCase;
-use DenLapaev\OpenStack\Integration\Utils;
+use OpenStack\Integration\TestCase;
+use OpenStack\Integration\Utils;
 use Psr\Http\Message\StreamInterface;
 
 class CoreTest extends TestCase

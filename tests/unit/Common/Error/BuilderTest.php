@@ -1,6 +1,6 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Error;
+namespace OpenStack\Test\Common\Error;
 
 use function GuzzleHttp\Psr7\stream_for;
 use function GuzzleHttp\Psr7\str;
@@ -9,9 +9,9 @@ use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Common\Error\Builder;
-use DenLapaev\OpenStack\Common\Error\UserInputError;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Common\Error\Builder;
+use OpenStack\Common\Error\UserInputError;
 
 class BuilderTest extends \PHPUnit_Framework_TestCase
 {

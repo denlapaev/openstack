@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\JsonSchema;
+namespace OpenStack\Common\JsonSchema;
 
 use JsonSchema\Validator;
 

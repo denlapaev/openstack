@@ -1,14 +1,14 @@
 <?php
 
-namespace DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models;
+namespace OpenStack\Networking\v2\Extensions\Layer3\Models;
 
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\Creatable;
-use DenLapaev\OpenStack\Common\Resource\Deletable;
-use DenLapaev\OpenStack\Common\Resource\Listable;
-use DenLapaev\OpenStack\Common\Resource\Retrievable;
-use DenLapaev\OpenStack\Common\Resource\Updateable;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
+use OpenStack\Common\Resource\Listable;
+use OpenStack\Common\Resource\Retrievable;
+use OpenStack\Common\Resource\Updateable;
+use OpenStack\Networking\v2\Extensions\Layer3\Api;
 
 /**
  * @property Api $api

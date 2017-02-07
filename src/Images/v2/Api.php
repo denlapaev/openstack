@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Images\v2;
+namespace OpenStack\Images\v2;
 
-use DenLapaev\OpenStack\Common\Api\AbstractApi;
+use OpenStack\Common\Api\AbstractApi;
 
 class Api extends AbstractApi
 {

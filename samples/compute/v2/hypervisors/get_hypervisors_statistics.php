@@ -1,10 +1,10 @@
 <?php
 
-use DenLapaev\OpenStack\Compute\v2\Models\HypervisorStatistic;
+use OpenStack\Compute\v2\Models\HypervisorStatistic;
 
 require 'vendor/autoload.php';
 
-$openstack = new DenLapaev\OpenStack\OpenStack([
+$openstack = new OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => [

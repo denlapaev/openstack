@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v3;
+namespace OpenStack\Identity\v3;
 
 abstract class Enum
 {

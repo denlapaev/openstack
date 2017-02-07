@@ -1,17 +1,17 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\ObjectStore\v1\Models;
+namespace OpenStack\ObjectStore\v1\Models;
 
 use GuzzleHttp\Promise\Promise;
 use GuzzleHttp\Psr7\LimitStream;
 use Psr\Http\Message\ResponseInterface;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\Creatable;
-use DenLapaev\OpenStack\Common\Resource\Deletable;
-use DenLapaev\OpenStack\Common\Resource\HasMetadata;
-use DenLapaev\OpenStack\Common\Resource\Listable;
-use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\Creatable;
+use OpenStack\Common\Resource\Deletable;
+use OpenStack\Common\Resource\HasMetadata;
+use OpenStack\Common\Resource\Listable;
+use OpenStack\Common\Resource\Retrievable;
 
 /**
  * @property \OpenStack\ObjectStore\v1\Api $api

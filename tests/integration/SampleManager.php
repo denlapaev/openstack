@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\integration;
+namespace OpenStack\integration;
 
-use DenLapaev\OpenStack\Integration\SampleManagerInterface;
+use OpenStack\Integration\SampleManagerInterface;
 
 class SampleManager implements SampleManagerInterface
 {
@@ -49,8 +49,8 @@ class SampleManager implements SampleManagerInterface
     {
         if ($this->verbosity === 1) {
             $subst = <<<'EOL'
-use DenLapaev\OpenStack\Integration\DefaultLogger;
-use DenLapaev\OpenStack\Integration\Utils;
+use OpenStack\Integration\DefaultLogger;
+use OpenStack\Integration\Utils;
 use GuzzleHttp\MessageFormatter;
 
 $options = [
@@ -58,12 +58,12 @@ $options = [
     'logger'           => new DefaultLogger(),
     'messageFormatter' => new MessageFormatter(),
 ];
-$openstack = new DenLapaev\OpenStack\OpenStack(Utils::getAuthOpts($options));
+$openstack = new OpenStack\OpenStack(Utils::getAuthOpts($options));
 EOL;
         } elseif ($this->verbosity === 2) {
             $subst = <<<'EOL'
-use DenLapaev\OpenStack\Integration\DefaultLogger;
-use DenLapaev\OpenStack\Integration\Utils;
+use OpenStack\Integration\DefaultLogger;
+use OpenStack\Integration\Utils;
 use GuzzleHttp\MessageFormatter;
 
 $options = [
@@ -71,13 +71,13 @@ $options = [
     'logger'           => new DefaultLogger(),
     'messageFormatter' => new MessageFormatter(MessageFormatter::DEBUG),
 ];
-$openstack = new DenLapaev\OpenStack\OpenStack(Utils::getAuthOpts($options));
+$openstack = new OpenStack\OpenStack(Utils::getAuthOpts($options));
 EOL;
         } else {
             $subst = <<<'EOL'
-use DenLapaev\OpenStack\Integration\Utils;
+use OpenStack\Integration\Utils;
 
-$openstack = new DenLapaev\OpenStack\OpenStack(Utils::getAuthOpts());
+$openstack = new OpenStack\OpenStack(Utils::getAuthOpts());
 EOL;
         }
 
@@ -99,7 +99,7 @@ EOL;
 
         $subst = $this->getConnectionTemplate();
         $content = preg_replace('/\([^)]+\)/', '', $content, 1);
-        $content = str_replace('$openstack = new DenLapaev\OpenStack\OpenStack;', $subst, $content);
+        $content = str_replace('$openstack = new OpenStack\OpenStack;', $subst, $content);
 
         $tmp = tempnam(sys_get_temp_dir(), 'openstack');
         file_put_contents($tmp, $content);

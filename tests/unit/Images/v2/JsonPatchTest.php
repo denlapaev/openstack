@@ -1,9 +1,9 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Images\v2;
+namespace OpenStack\Test\Images\v2;
 
-use DenLapaev\OpenStack\Images\v2\JsonPatch;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Images\v2\JsonPatch;
+use OpenStack\Test\TestCase;
 
 class JsonPatchTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Networking\v2\Extensions\Layer3;
+namespace OpenStack\Networking\v2\Extensions\Layer3;
 
-use DenLapaev\OpenStack\Common\Service\AbstractService;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
+use OpenStack\Common\Service\AbstractService;
+use OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
+use OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
 
 /**
  * @property Api $api

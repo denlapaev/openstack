@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\ObjectStore\v1\Models;
+namespace OpenStack\ObjectStore\v1\Models;
 
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\HasMetadata;
-use DenLapaev\OpenStack\Common\Resource\Retrievable;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\HasMetadata;
+use OpenStack\Common\Resource\Retrievable;
 use Psr\Http\Message\ResponseInterface;
 
 /**

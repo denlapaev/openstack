@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Images\v2;
+namespace OpenStack\Images\v2;
 
-use DenLapaev\OpenStack\Common\Api\AbstractParams;
+use OpenStack\Common\Api\AbstractParams;
 use Psr\Http\Message\StreamInterface;
 
 class Params extends AbstractParams

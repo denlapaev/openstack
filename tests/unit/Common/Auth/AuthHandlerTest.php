@@ -1,11 +1,11 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Auth;
+namespace OpenStack\Test\Common\Auth;
 
 use GuzzleHttp\Psr7\Request;
-use DenLapaev\OpenStack\Common\Auth\AuthHandler;
-use DenLapaev\OpenStack\Common\Auth\Token;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\Auth\AuthHandler;
+use OpenStack\Common\Auth\Token;
+use OpenStack\Test\TestCase;
 use Psr\Http\Message\RequestInterface;
 
 class AuthHandlerTest extends TestCase

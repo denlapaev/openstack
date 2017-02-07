@@ -1,13 +1,13 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Networking\v2;
+namespace OpenStack\Test\Networking\v2;
 
-use DenLapaev\OpenStack\Networking\v2\Api;
-use DenLapaev\OpenStack\Networking\v2\Models\Network;
-use DenLapaev\OpenStack\Networking\v2\Models\Port;
-use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
-use DenLapaev\OpenStack\Networking\v2\Service;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Networking\v2\Api;
+use OpenStack\Networking\v2\Models\Network;
+use OpenStack\Networking\v2\Models\Port;
+use OpenStack\Networking\v2\Models\Subnet;
+use OpenStack\Networking\v2\Service;
+use OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class ServiceTest extends TestCase

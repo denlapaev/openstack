@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common;
+namespace OpenStack\Test\Common;
 
-use DenLapaev\OpenStack\Common\JsonPath;
+use OpenStack\Common\JsonPath;
 
 class JsonPathTest extends \PHPUnit_Framework_TestCase
 {

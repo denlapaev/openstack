@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v3;
+namespace OpenStack\Identity\v3;
 
-use DenLapaev\OpenStack\Common\Api\AbstractParams;
+use OpenStack\Common\Api\AbstractParams;
 
 class Params extends AbstractParams
 {

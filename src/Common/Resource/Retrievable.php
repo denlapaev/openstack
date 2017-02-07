@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Resource;
+namespace OpenStack\Common\Resource;
 
 /**
  * A resource that supports a GET or HEAD operation to retrieve more details.
  *
- * @package DenLapaev\OpenStack\Common\Resource
+ * @package OpenStack\Common\Resource
  */
 interface Retrievable
 {

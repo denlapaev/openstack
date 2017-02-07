@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models;
+namespace OpenStack\Networking\v2\Extensions\Layer3\Models;
 
-use DenLapaev\OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\AbstractResource;
 
 class FixedIp extends AbstractResource
 {

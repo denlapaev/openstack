@@ -1,9 +1,9 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common;
+namespace OpenStack\Test\Common;
 
-use DenLapaev\OpenStack\Common\ArrayAccessTrait;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\ArrayAccessTrait;
+use OpenStack\Test\TestCase;
 
 class ArrayAccessTraitTest extends TestCase
 {

@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v2\Models;
+namespace OpenStack\Identity\v2\Models;
 
-use DenLapaev\OpenStack\Common\Transport\Utils;
+use OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\ValueResource;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\ValueResource;
 
 /**
  * Represents an Identity v2 Token.
  *
- * @package DenLapaev\OpenStack\Identity\v2\Models
+ * @package OpenStack\Identity\v2\Models
  */
 class Token extends OperatorResource implements \OpenStack\Common\Auth\Token
 {

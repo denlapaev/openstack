@@ -1,31 +1,31 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test;
+namespace OpenStack\Test;
 
 use GuzzleHttp\ClientInterface;
-use DenLapaev\OpenStack\Common\Service\Builder;
-use DenLapaev\OpenStack\Identity\v3\Api;
-use DenLapaev\OpenStack\OpenStack;
-use DenLapaev\OpenStack\Compute\v2\Service as ComputeServiceV2;
-use DenLapaev\OpenStack\Identity\v2\Service as IdentityServiceV2;
-use DenLapaev\OpenStack\Identity\v3\Service as IdentityServiceV3;
-use DenLapaev\OpenStack\Networking\v2\Service as NetworkingServiceV2;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Service as NetworkingServiceV2ExtLayer3;
-use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Service as NetworkingServiceV2ExtSecGroup;
-use DenLapaev\OpenStack\ObjectStore\v1\Service as ObjectStoreServiceV1;
-use DenLapaev\OpenStack\BlockStorage\v2\Service as BlockStorageServiceV2;
-use DenLapaev\OpenStack\Images\v2\Service as ImageServiceV2;
+use OpenStack\Common\Service\Builder;
+use OpenStack\Identity\v3\Api;
+use OpenStack\OpenStack;
+use OpenStack\Compute\v2\Service as ComputeServiceV2;
+use OpenStack\Identity\v2\Service as IdentityServiceV2;
+use OpenStack\Identity\v3\Service as IdentityServiceV3;
+use OpenStack\Networking\v2\Service as NetworkingServiceV2;
+use OpenStack\Networking\v2\Extensions\Layer3\Service as NetworkingServiceV2ExtLayer3;
+use OpenStack\Networking\v2\Extensions\SecurityGroups\Service as NetworkingServiceV2ExtSecGroup;
+use OpenStack\ObjectStore\v1\Service as ObjectStoreServiceV1;
+use OpenStack\BlockStorage\v2\Service as BlockStorageServiceV2;
+use OpenStack\Images\v2\Service as ImageServiceV2;
 
-class DenLapaev\OpenStackTest extends TestCase
+class OpenStackTest extends TestCase
 {
     private $builder;
-    /** @var DenLapaev\OpenStack */
+    /** @var OpenStack */
     private $openstack;
 
     public function setUp()
     {
         $this->builder = $this->prophesize(Builder::class);
-        $this->openstack = new DenLapaev\OpenStack(['authUrl' => ''], $this->builder->reveal());
+        $this->openstack = new OpenStack(['authUrl' => ''], $this->builder->reveal());
     }
 
     public function test_it_supports_compute_v2()

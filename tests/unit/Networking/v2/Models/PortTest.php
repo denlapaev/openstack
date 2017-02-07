@@ -1,11 +1,11 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Subneting\v2\Models;
+namespace OpenStack\Test\Subneting\v2\Models;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Networking\v2\Api;
-use DenLapaev\OpenStack\Networking\v2\Models\Port;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Networking\v2\Api;
+use OpenStack\Networking\v2\Models\Port;
+use OpenStack\Test\TestCase;
 
 class PortTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\JsonSchema;
+namespace OpenStack\Test\Common\JsonSchema;
 
 use JsonSchema\Validator;
-use DenLapaev\OpenStack\Common\JsonSchema\Schema;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\JsonSchema\Schema;
+use OpenStack\Test\TestCase;
 
 class SchemaTest extends TestCase
 {

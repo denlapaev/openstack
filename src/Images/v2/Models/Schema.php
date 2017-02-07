@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Images\v2\Models;
+namespace OpenStack\Images\v2\Models;
 
 use JsonSchema\Validator;
 

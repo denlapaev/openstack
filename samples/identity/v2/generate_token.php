@@ -4,9 +4,9 @@ require 'vendor/autoload.php';
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use DenLapaev\OpenStack\Identity\v2\Service;
-use DenLapaev\OpenStack\Common\Transport\Utils as TransportUtils;
-use DenLapaev\OpenStack\OpenStack;
+use OpenStack\Identity\v2\Service;
+use OpenStack\Common\Transport\Utils as TransportUtils;
+use OpenStack\OpenStack;
 
 $authUrl = 'https://example.com:5000/v2.0';
 
@@ -14,7 +14,7 @@ $httpClient = new Client([
     'base_uri' => TransportUtils::normalizeUrl($authUrl),
     'handler'  => HandlerStack::create(),
 ]);
-
+        
 $options = [
     'authUrl'         => $authUrl,
     'region'          => 'RegionOne',
@@ -24,4 +24,4 @@ $options = [
     'identityService' => Service::factory($httpClient),
 ];
 
-$openstack = new DenLapaev\OpenStack($options);
+$openstack = new OpenStack($options);

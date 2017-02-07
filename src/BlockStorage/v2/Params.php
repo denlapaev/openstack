@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\BlockStorage\v2;
+namespace OpenStack\BlockStorage\v2;
 
-use DenLapaev\OpenStack\Common\Api\AbstractParams;
+use OpenStack\Common\Api\AbstractParams;
 
 class Params extends AbstractParams
 {

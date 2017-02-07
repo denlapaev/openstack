@@ -1,13 +1,13 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Networking\v2\Extensions\Layer3;
+namespace OpenStack\Test\Networking\v2\Extensions\Layer3;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Test\TestCase;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Service;
+use OpenStack\Test\TestCase;
+use OpenStack\Networking\v2\Extensions\Layer3\Api;
+use OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
+use OpenStack\Networking\v2\Extensions\Layer3\Models\Router;
+use OpenStack\Networking\v2\Extensions\Layer3\Service;
 
 class ServiceTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v3\Models;
+namespace OpenStack\Identity\v3\Models;
 
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Resource\Listable;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Resource\Listable;
 
 class Assignment extends OperatorResource implements Listable
 {

@@ -1,16 +1,16 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Compute\v2;
+namespace OpenStack\Test\Compute\v2;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Compute\v2\Api;
-use DenLapaev\OpenStack\Compute\v2\Models\Flavor;
-use DenLapaev\OpenStack\Compute\v2\Models\HypervisorStatistic;
-use DenLapaev\OpenStack\Compute\v2\Models\Image;
-use DenLapaev\OpenStack\Compute\v2\Models\Keypair;
-use DenLapaev\OpenStack\Compute\v2\Models\Server;
-use DenLapaev\OpenStack\Compute\v2\Service;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Compute\v2\Api;
+use OpenStack\Compute\v2\Models\Flavor;
+use OpenStack\Compute\v2\Models\HypervisorStatistic;
+use OpenStack\Compute\v2\Models\Image;
+use OpenStack\Compute\v2\Models\Keypair;
+use OpenStack\Compute\v2\Models\Server;
+use OpenStack\Compute\v2\Service;
+use OpenStack\Test\TestCase;
 use Prophecy\Argument;
 
 class ServiceTest extends TestCase

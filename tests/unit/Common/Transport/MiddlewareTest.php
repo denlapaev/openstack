@@ -5,9 +5,9 @@ namespace unit\Common\Transport;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Transport\Middleware;
-use DenLapaev\OpenStack\Test\TestCase;
-use DenLapaev\OpenStack\Common\Auth\AuthHandler;
+use OpenStack\Common\Transport\Middleware;
+use OpenStack\Test\TestCase;
+use OpenStack\Common\Auth\AuthHandler;
 
 class MiddlewareTest extends TestCase
 {

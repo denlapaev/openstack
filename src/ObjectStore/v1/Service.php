@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\ObjectStore\v1;
+namespace OpenStack\ObjectStore\v1;
 
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Common\Service\AbstractService;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Account;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Container;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Common\Service\AbstractService;
+use OpenStack\ObjectStore\v1\Models\Account;
+use OpenStack\ObjectStore\v1\Models\Container;
 
 /**
  * @property \OpenStack\ObjectStore\v1\Api $api

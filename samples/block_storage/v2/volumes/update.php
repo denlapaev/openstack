@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$openstack = new DenLapaev\OpenStack\OpenStack([
+$openstack = new OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => ['id' => '{userId}', 'password' => '{password}'],

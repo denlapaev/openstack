@@ -1,8 +1,8 @@
 <?php
 
-namespace DenLapaev\OpenStack\Integration\Networking\v2;
+namespace OpenStack\Integration\Networking\v2;
 
-use DenLapaev\OpenStack\Integration\TestCase;
+use OpenStack\Integration\TestCase;
 
 class SecGroupTest extends TestCase
 {

@@ -1,18 +1,18 @@
 <?php
 
-namespace DenLapaev\OpenStack\Integration;
+namespace OpenStack\Integration;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use DenLapaev\OpenStack\Identity\v2\Service;
-use DenLapaev\OpenStack\Common\Transport\Utils as TransportUtils;
-use DenLapaev\OpenStack\OpenStack;
+use OpenStack\Identity\v2\Service;
+use OpenStack\Common\Transport\Utils as TransportUtils;
+use OpenStack\OpenStack;
 
 class Utils
 {
-    public static function getOpenStack(): DenLapaev\OpenStack
+    public static function getOpenStack(): OpenStack
     {
-        return new DenLapaev\OpenStack(self::getAuthOpts());
+        return new OpenStack(self::getAuthOpts());
     }
 
     public static function getAuthOptsV3()

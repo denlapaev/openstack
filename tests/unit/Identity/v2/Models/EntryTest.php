@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Identity\v2\Models;
+namespace OpenStack\Test\Identity\v2\Models;
 
-use DenLapaev\OpenStack\Identity\v2\Api;
-use DenLapaev\OpenStack\Identity\v2\Models\Entry;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Identity\v2\Api;
+use OpenStack\Identity\v2\Models\Entry;
+use OpenStack\Test\TestCase;
 
 class EntryTest extends TestCase
 {

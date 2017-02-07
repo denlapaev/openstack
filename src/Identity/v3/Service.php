@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Identity\v3;
+namespace OpenStack\Identity\v3;
 
 use GuzzleHttp\ClientInterface;
-use DenLapaev\OpenStack\Common\Auth\IdentityService;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Common\Service\AbstractService;
-use DenLapaev\OpenStack\Identity\v3\Models;
+use OpenStack\Common\Auth\IdentityService;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Common\Service\AbstractService;
+use OpenStack\Identity\v3\Models;
 
 /**
  * Represents the Keystone v3 service.

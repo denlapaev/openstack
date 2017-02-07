@@ -1,15 +1,15 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\ObjectStore\v1;
+namespace OpenStack\Test\ObjectStore\v1;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\ObjectStore\v1\Api;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Account;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Container;
-use DenLapaev\OpenStack\ObjectStore\v1\Service;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\ObjectStore\v1\Api;
+use OpenStack\ObjectStore\v1\Models\Account;
+use OpenStack\ObjectStore\v1\Models\Container;
+use OpenStack\ObjectStore\v1\Service;
+use OpenStack\Test\TestCase;
 
 class ServiceTest extends TestCase
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Transport;
+namespace OpenStack\Test\Common\Transport;
 
 use Guzzle\Tests\Service\Mock\Command\Sub\Sub;
-use DenLapaev\OpenStack\Common\Api\Parameter;
-use DenLapaev\OpenStack\Common\Resource\AbstractResource;
-use DenLapaev\OpenStack\Common\Resource\OperatorResource;
-use DenLapaev\OpenStack\Common\Transport\JsonSerializer;
+use OpenStack\Common\Api\Parameter;
+use OpenStack\Common\Resource\AbstractResource;
+use OpenStack\Common\Resource\OperatorResource;
+use OpenStack\Common\Transport\JsonSerializer;
 
 class JsonSerializerTest extends \PHPUnit_Framework_TestCase
 {

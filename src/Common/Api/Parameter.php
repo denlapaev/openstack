@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Api;
+namespace OpenStack\Common\Api;
 
-use DenLapaev\OpenStack\Common\HydratorStrategyTrait;
+use OpenStack\Common\HydratorStrategyTrait;
 
 /**
  * Represents an individual request parameter in a RESTful operation. A parameter can take on many forms:
@@ -29,7 +29,7 @@ use DenLapaev\OpenStack\Common\HydratorStrategyTrait;
  * * Path parameters are those which populate a URL path. They are serialized according to URL
  *   placeholders.
  *
- * @package DenLapaev\OpenStack\Common\Api
+ * @package OpenStack\Common\Api
  */
 class Parameter
 {
@@ -98,7 +98,7 @@ class Parameter
 
     /**
      * Relevant to "json" location parameters only. This property allows for deep nesting through the use of
-     * {@see DenLapaev\OpenStack\Common\JsonPath}.
+     * {@see OpenStack\Common\JsonPath}.
      *
      * @var string
      */

@@ -1,11 +1,11 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Common\Error;
+namespace OpenStack\Test\Common\Error;
 
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Common\Error\BadResponseError;
+use OpenStack\Test\TestCase;
 
 class BadResponseErrorTest extends TestCase
 {

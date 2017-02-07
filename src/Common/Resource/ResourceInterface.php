@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Resource;
+namespace OpenStack\Common\Resource;
 
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Represents an API resource.
  *
- * @package DenLapaev\OpenStack\Common\Resource
+ * @package OpenStack\Common\Resource
  */
 interface ResourceInterface
 {

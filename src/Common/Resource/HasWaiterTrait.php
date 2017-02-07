@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack\Common\Resource;
+namespace OpenStack\Common\Resource;
 
-use DenLapaev\OpenStack\Common\Error\BadResponseError;
+use OpenStack\Common\Error\BadResponseError;
 
 /**
  * Contains reusable functionality for resources that have long operations which require waiting in
@@ -10,7 +10,7 @@ use DenLapaev\OpenStack\Common\Error\BadResponseError;
  *
  * @codeCoverageIgnore
  *
- * @package DenLapaev\OpenStack\Common\Resource
+ * @package OpenStack\Common\Resource
  */
 trait HasWaiterTrait
 {

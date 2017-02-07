@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups;
+namespace OpenStack\Networking\v2\Extensions\SecurityGroups;
 
-use DenLapaev\OpenStack\Common\Service\AbstractService;
-use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
-use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
+use OpenStack\Common\Service\AbstractService;
+use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup;
+use OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroupRule;
 
 /**
  * @property Api $api

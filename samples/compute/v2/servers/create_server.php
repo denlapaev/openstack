@@ -2,7 +2,7 @@
 
 require 'vendor/autoload.php';
 
-$openstack = new DenLapaev\OpenStack\OpenStack([
+$openstack = new OpenStack\OpenStack([
     'authUrl' => '{authUrl}',
     'region'  => '{region}',
     'user'    => [
@@ -31,5 +31,5 @@ $options = [
 ];
 
 // Create the server
-/**@var DenLapaev\OpenStack\Compute\v2\Models\Server $server */
+/**@var OpenStack\Compute\v2\Models\Server $server */
 $server = $compute->createServer($options);

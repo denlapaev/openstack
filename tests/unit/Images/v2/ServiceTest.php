@@ -1,12 +1,12 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Images\v2;
+namespace OpenStack\Test\Images\v2;
 
 use GuzzleHttp\Psr7\Uri;
-use DenLapaev\OpenStack\Images\v2\Api;
-use DenLapaev\OpenStack\Images\v2\Models\Image;
-use DenLapaev\OpenStack\Images\v2\Service;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\Images\v2\Api;
+use OpenStack\Images\v2\Models\Image;
+use OpenStack\Images\v2\Service;
+use OpenStack\Test\TestCase;
 
 class ServiceTest extends TestCase
 {

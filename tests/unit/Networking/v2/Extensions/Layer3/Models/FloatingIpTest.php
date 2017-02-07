@@ -1,11 +1,11 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\Networking\v2\Extensions\Layer3\Models;
+namespace OpenStack\Test\Networking\v2\Extensions\Layer3\Models;
 
 use GuzzleHttp\Psr7\Response;
-use DenLapaev\OpenStack\Test\TestCase;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Api;
-use DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
+use OpenStack\Test\TestCase;
+use OpenStack\Networking\v2\Extensions\Layer3\Api;
+use OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp;
 
 class FloatingIpTest extends TestCase
 {

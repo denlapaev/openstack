@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\integration\Images\v2;
+namespace OpenStack\integration\Images\v2;
 
-use DenLapaev\OpenStack\Images\v2\Models\Image;
-use DenLapaev\OpenStack\Images\v2\Models\Member;
-use DenLapaev\OpenStack\Integration\TestCase;
+use OpenStack\Images\v2\Models\Image;
+use OpenStack\Images\v2\Models\Member;
+use OpenStack\Integration\TestCase;
 
 class CoreTest extends TestCase
 {

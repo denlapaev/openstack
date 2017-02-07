@@ -1,18 +1,18 @@
 <?php declare(strict_types=1);
 
-namespace DenLapaev\OpenStack;
+namespace OpenStack;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\HandlerStack;
-use DenLapaev\OpenStack\Common\Service\Builder;
-use DenLapaev\OpenStack\Common\Transport\Utils;
-use DenLapaev\OpenStack\Identity\v3\Service;
+use OpenStack\Common\Service\Builder;
+use OpenStack\Common\Transport\Utils;
+use OpenStack\Identity\v3\Service;
 
 /**
  * This class is the primary entry point for working with the SDK. It allows for the easy creation
  * of OpenStack services.
  *
- * @package DenLapaev\OpenStack
+ * @package OpenStack
  */
 class OpenStack
 {

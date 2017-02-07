@@ -1,10 +1,10 @@
 <?php
 
-namespace DenLapaev\OpenStack\Test\ObjectStore\v1\Models;
+namespace OpenStack\Test\ObjectStore\v1\Models;
 
-use DenLapaev\OpenStack\ObjectStore\v1\Api;
-use DenLapaev\OpenStack\ObjectStore\v1\Models\Account;
-use DenLapaev\OpenStack\Test\TestCase;
+use OpenStack\ObjectStore\v1\Api;
+use OpenStack\ObjectStore\v1\Models\Account;
+use OpenStack\Test\TestCase;
 
 class AccountTest extends TestCase
 {

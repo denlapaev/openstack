@@ -1,11 +1,11 @@
 <?php
 
-namespace DenLapaev\OpenStack\Integration\Networking\v2;
+namespace OpenStack\Integration\Networking\v2;
 
-use DenLapaev\OpenStack\Networking\v2\Models\Network;
-use DenLapaev\OpenStack\Networking\v2\Models\Port;
-use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
-use DenLapaev\OpenStack\Integration\TestCase;
+use OpenStack\Networking\v2\Models\Network;
+use OpenStack\Networking\v2\Models\Port;
+use OpenStack\Networking\v2\Models\Subnet;
+use OpenStack\Integration\TestCase;
 
 class CoreTest extends TestCase
 {
