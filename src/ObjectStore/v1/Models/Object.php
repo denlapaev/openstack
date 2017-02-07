@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Resource\Deletable;
 use DenLapaev\OpenStack\Common\Resource\HasMetadata;
 
 /**
- * @property \OpenStack\ObjectStore\v1\Api $api
+ * @property \DenLapaev\OpenStack\ObjectStore\v1\Api $api
  */
 class Object extends OperatorResource implements Creatable, Deletable, HasMetadata
 {
@@ -71,7 +71,7 @@ class Object extends OperatorResource implements Creatable, Deletable, HasMetada
     }
 
     /**
-     * @param array $data {@see \OpenStack\ObjectStore\v1\Api::putObject}
+     * @param array $data {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::putObject}
      *
      * @return $this
      */
@@ -114,7 +114,7 @@ class Object extends OperatorResource implements Creatable, Deletable, HasMetada
     }
 
     /**
-     * @param array $options {@see \OpenStack\ObjectStore\v1\Api::copyObject}
+     * @param array $options {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::copyObject}
      */
     public function copy(array $options)
     {

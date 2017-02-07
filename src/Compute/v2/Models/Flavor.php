@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 /**
  * Represents a Compute v2 Flavor.
  *
- * @property \OpenStack\Compute\v2\Api $api
+ * @property \DenLapaev\OpenStack\Compute\v2\Api $api
  */
 class Flavor extends OperatorResource implements Listable, Retrievable, Creatable, Deletable
 {

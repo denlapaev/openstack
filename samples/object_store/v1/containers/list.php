@@ -15,5 +15,5 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 $service = $openstack->objectStoreV1();
 
 foreach ($service->listContainers() as $container) {
-    /** @var $container \OpenStack\ObjectStore\v1\Models\Container */
+    /** @var $container \DenLapaev\OpenStack\ObjectStore\v1\Models\Container */
 }

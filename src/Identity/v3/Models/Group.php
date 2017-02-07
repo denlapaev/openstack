@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \OpenStack\Identity\v3\Api $api
+ * @property \DenLapaev\OpenStack\Identity\v3\Api $api
  */
 class Group extends OperatorResource implements Creatable, Listable, Retrievable, Updateable, Deletable
 {
@@ -38,7 +38,7 @@ class Group extends OperatorResource implements Creatable, Listable, Retrievable
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \OpenStack\Identity\v3\Api::postGroups}
+     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postGroups}
      */
     public function create(array $data): Creatable
     {
@@ -73,7 +73,7 @@ class Group extends OperatorResource implements Creatable, Listable, Retrievable
     }
 
     /**
-     * @param array $options {@see \OpenStack\Identity\v3\Api::getGroupUsers}
+     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::getGroupUsers}
      *
      * @return \Generator
      */
@@ -84,7 +84,7 @@ class Group extends OperatorResource implements Creatable, Listable, Retrievable
     }
 
     /**
-     * @param array $options {@see \OpenStack\Identity\v3\Api::putGroupUser}
+     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::putGroupUser}
      */
     public function addUser(array $options)
     {
@@ -92,7 +92,7 @@ class Group extends OperatorResource implements Creatable, Listable, Retrievable
     }
 
     /**
-     * @param array $options {@see \OpenStack\Identity\v3\Api::deleteGroupUser}
+     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::deleteGroupUser}
      */
     public function removeUser(array $options)
     {
@@ -100,7 +100,7 @@ class Group extends OperatorResource implements Creatable, Listable, Retrievable
     }
 
     /**
-     * @param array $options {@see \OpenStack\Identity\v3\Api::headGroupUser}
+     * @param array $options {@see \DenLapaev\OpenStack\Identity\v3\Api::headGroupUser}
      *
      * @return bool
      */

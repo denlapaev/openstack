@@ -10,7 +10,7 @@ use DenLapaev\OpenStack\Common\Transport\Utils;
 /**
  * Represents a Compute v2 Quota
  *
- * @property \OpenStack\Compute\v2\Api $api
+ * @property \DenLapaev\OpenStack\Compute\v2\Api $api
  */
 class HypervisorStatistic extends OperatorResource
 {

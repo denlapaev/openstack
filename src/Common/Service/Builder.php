@@ -70,7 +70,7 @@ class Builder
      * @param string $namespace      The namespace of the service
      * @param array  $serviceOptions The service-specific options to use
      *
-     * @return \OpenStack\Common\Service\ServiceInterface
+     * @return \DenLapaev\OpenStack\Common\Service\ServiceInterface
      *
      * @throws \Exception
      */

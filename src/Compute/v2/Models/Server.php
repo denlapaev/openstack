@@ -16,7 +16,7 @@ use DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityG
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @property \OpenStack\Compute\v2\Api $api
+ * @property \DenLapaev\OpenStack\Compute\v2\Api $api
  */
 class Server extends OperatorResource implements
     Creatable,
@@ -98,7 +98,7 @@ class Server extends OperatorResource implements
     /**
      * {@inheritDoc}
      *
-     * @param array $userOptions {@see \OpenStack\Compute\v2\Api::postServer}
+     * @param array $userOptions {@see \DenLapaev\OpenStack\Compute\v2\Api::postServer}
      */
     public function create(array $userOptions): Creatable
     {
@@ -187,7 +187,7 @@ class Server extends OperatorResource implements
     /**
      * Rebuilds the server.
      *
-     * @param array $options {@see \OpenStack\Compute\v2\Api::rebuildServer}
+     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::rebuildServer}
      */
     public function rebuild(array $options)
     {
@@ -285,7 +285,7 @@ class Server extends OperatorResource implements
     /**
      * Creates an image for the current server.
      *
-     * @param array $options {@see \OpenStack\Compute\v2\Api::createServerImage}
+     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::createServerImage}
      */
     public function createImage(array $options)
     {
@@ -296,7 +296,7 @@ class Server extends OperatorResource implements
     /**
      * Iterates over all the IP addresses for this server.
      *
-     * @param array $options {@see \OpenStack\Compute\v2\Api::getAddressesByNetwork}
+     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::getAddressesByNetwork}
      *
      * @return array An array containing to two keys: "public" and "private"
      */
@@ -324,7 +324,7 @@ class Server extends OperatorResource implements
      * Resets all the metadata for this server with the values provided. All existing metadata keys
      * will either be replaced or removed.
      *
-     * @param array $metadata {@see \OpenStack\Compute\v2\Api::putServerMetadata}
+     * @param array $metadata {@see \DenLapaev\OpenStack\Compute\v2\Api::putServerMetadata}
      */
     public function resetMetadata(array $metadata)
     {
@@ -337,7 +337,7 @@ class Server extends OperatorResource implements
      * referenced in the user options will be replaced with the user's new values. All other
      * existing keys will remain unaffected.
      *
-     * @param array $metadata {@see \OpenStack\Compute\v2\Api::postServerMetadata}
+     * @param array $metadata {@see \DenLapaev\OpenStack\Compute\v2\Api::postServerMetadata}
      *
      * @return array
      */
@@ -350,7 +350,7 @@ class Server extends OperatorResource implements
     /**
      * Retrieve the value for a specific metadata key.
      *
-     * @param string $key {@see \OpenStack\Compute\v2\Api::getServerMetadataKey}
+     * @param string $key {@see \DenLapaev\OpenStack\Compute\v2\Api::getServerMetadataKey}
      *
      * @return mixed
      */
@@ -365,7 +365,7 @@ class Server extends OperatorResource implements
     /**
      * Remove a specific metadata key.
      *
-     * @param string $key {@see \OpenStack\Compute\v2\Api::deleteServerMetadataKey}
+     * @param string $key {@see \DenLapaev\OpenStack\Compute\v2\Api::deleteServerMetadataKey}
      */
     public function deleteMetadataItem(string $key)
     {
@@ -380,7 +380,7 @@ class Server extends OperatorResource implements
     /**
      * Add security group to a server (addSecurityGroup action)
      *
-     * @param array $options {@see \OpenStack\Compute\v2\Api::postSecurityGroup}
+     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::postSecurityGroup}
      *
      * @return SecurityGroup
      */
@@ -396,7 +396,7 @@ class Server extends OperatorResource implements
     /**
      * Add security group to a server (addSecurityGroup action)
      *
-     * @param array $options {@see \OpenStack\Compute\v2\Api::deleteSecurityGroup}
+     * @param array $options {@see \DenLapaev\OpenStack\Compute\v2\Api::deleteSecurityGroup}
      */
     public function removeSecurityGroup(array $options)
     {

@@ -16,5 +16,5 @@ $floatingIps = $openstack->networkingV2ExtLayer3()
                          ->listFloatingIps();
 
 foreach ($floatingIps as $floatingIp) {
-    /** @var \OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $floatingIp */
+    /** @var \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $floatingIp */
 }

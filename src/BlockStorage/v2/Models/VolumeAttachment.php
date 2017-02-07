@@ -5,7 +5,7 @@ use DenLapaev\OpenStack\Common\Resource\Listable;
 use DenLapaev\OpenStack\Common\Resource\OperatorResource;
 
 /**
- * @property \OpenStack\BlockStorage\v2\Api $api
+ * @property \DenLapaev\OpenStack\BlockStorage\v2\Api $api
  */
 class VolumeAttachment extends OperatorResource implements Listable
 {

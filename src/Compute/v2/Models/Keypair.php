@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Transport\Utils;
 /**
  * Represents a Compute v2 Keypair
  *
- * @property \OpenStack\Compute\v2\Api $api
+ * @property \DenLapaev\OpenStack\Compute\v2\Api $api
  */
 class Keypair extends OperatorResource implements Listable, Retrievable, Deletable, Creatable
 {

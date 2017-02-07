@@ -19,7 +19,7 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 $identity = $openstack->identityV3(['region' => '{region}']);
 
 $endpoint = $identity->createEndpoint([
-    'interface' => \OpenStack\Identity\v3\Enum::INTERFACE_INTERNAL,
+    'interface' => \DenLapaev\OpenStack\Identity\v3\Enum::INTERFACE_INTERNAL,
     'name'      => '{endpointName}',
     'region'    => '{region}',
     'url'       => '{endpointUrl}',

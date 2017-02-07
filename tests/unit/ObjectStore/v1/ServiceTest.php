@@ -69,7 +69,7 @@ class ServiceTest extends TestCase
     }
 
     /**
-     * @expectedException \OpenStack\Common\Error\BadResponseError
+     * @expectedException \DenLapaev\OpenStack\Common\Error\BadResponseError
      */
     public function test_it_throws_exception_when_error()
     {

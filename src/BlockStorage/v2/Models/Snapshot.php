@@ -14,7 +14,7 @@ use DenLapaev\OpenStack\Common\Transport\Utils;
 use Psr\Http\Message\ResponseInterface;
 
 /**
- * @property \OpenStack\BlockStorage\v2\Api $api
+ * @property \DenLapaev\OpenStack\BlockStorage\v2\Api $api
  */
 class Snapshot extends OperatorResource implements Listable, Creatable, Updateable, Deletable, Retrievable, HasMetadata
 {
@@ -67,7 +67,7 @@ class Snapshot extends OperatorResource implements Listable, Creatable, Updateab
     }
 
     /**
-     * @param array $userOptions {@see \OpenStack\BlockStorage\v2\Api::postSnapshots}
+     * @param array $userOptions {@see \DenLapaev\OpenStack\BlockStorage\v2\Api::postSnapshots}
      *
      * @return Creatable
      */

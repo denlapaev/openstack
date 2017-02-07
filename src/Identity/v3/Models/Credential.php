@@ -10,7 +10,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \OpenStack\Identity\v3\Api $api
+ * @property \DenLapaev\OpenStack\Identity\v3\Api $api
  */
 class Credential extends OperatorResource implements Creatable, Updateable, Retrievable, Listable, Deletable
 {

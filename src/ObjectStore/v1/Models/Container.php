@@ -14,7 +14,7 @@ use DenLapaev\OpenStack\Common\Resource\Listable;
 use DenLapaev\OpenStack\Common\Resource\Retrievable;
 
 /**
- * @property \OpenStack\ObjectStore\v1\Api $api
+ * @property \DenLapaev\OpenStack\ObjectStore\v1\Api $api
  */
 class Container extends OperatorResource implements Creatable, Deletable, Retrievable, Listable, HasMetadata
 {
@@ -53,7 +53,7 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
     /**
      * Retrieves a collection of object resources in the form of a generator.
      *
-     * @param array         $options {@see \OpenStack\ObjectStore\v1\Api::getContainer}
+     * @param array         $options {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::getContainer}
      * @param callable|null $mapFn   Allows a function to be mapped over each element.
      *
      * @return \Generator
@@ -74,7 +74,7 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
     }
 
     /**
-     * @param array $data {@see \OpenStack\ObjectStore\v1\Api::putContainer}
+     * @param array $data {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::putContainer}
      *
      * @return $this
      */
@@ -175,7 +175,7 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
     /**
      * Creates a single object according to the values provided.
      *
-     * @param array $data {@see \OpenStack\ObjectStore\v1\Api::putObject}
+     * @param array $data {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::putObject}
      *
      * @return Object
      */
@@ -189,7 +189,7 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
      * container. When this completes, a manifest file is uploaded which references the prefix of the segments,
      * allowing concatenation when a request is executed against the manifest.
      *
-     * @param array  $data                     {@see \OpenStack\ObjectStore\v1\Api::putObject}
+     * @param array  $data                     {@see \DenLapaev\OpenStack\ObjectStore\v1\Api::putObject}
      * @param int    $data['segmentSize']      The size in Bytes of each segment
      * @param string $data['segmentContainer'] The container to which each segment will be uploaded
      * @param string $data['segmentPrefix']    The prefix that will come before each segment. If omitted, a default
@@ -208,7 +208,7 @@ class Container extends OperatorResource implements Creatable, Deletable, Retrie
             ? $data['segmentPrefix']
             : sprintf("%s/%s/%d", $data['name'], microtime(true), $stream->getSize());
 
-        /** @var \OpenStack\ObjectStore\v1\Service $service */
+        /** @var \DenLapaev\OpenStack\ObjectStore\v1\Service $service */
         $service = $this->getService();
         if (!$service->containerExists($segmentContainer)) {
             $service->createContainer(['name' => $segmentContainer]);

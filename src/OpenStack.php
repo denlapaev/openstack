@@ -71,9 +71,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Compute\v2\Service
+     * @return \DenLapaev\OpenStack\Compute\v2\Service
      */
-    public function computeV2(array $options = []): \OpenStack\Compute\v2\Service
+    public function computeV2(array $options = []): \DenLapaev\OpenStack\Compute\v2\Service
     {
         $defaults = ['catalogName' => 'nova', 'catalogType' => 'compute'];
         return $this->builder->createService('Compute\\v2', array_merge($defaults, $options));
@@ -84,9 +84,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Networking\v2\Service
+     * @return \DenLapaev\OpenStack\Networking\v2\Service
      */
-    public function networkingV2(array $options = []): \OpenStack\Networking\v2\Service
+    public function networkingV2(array $options = []): \DenLapaev\OpenStack\Networking\v2\Service
     {
         $defaults = ['catalogName' => 'neutron', 'catalogType' => 'network'];
         return $this->builder->createService('Networking\\v2', array_merge($defaults, $options));
@@ -97,9 +97,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Networking\v2\Extensions\Layer3\Service
+     * @return \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Service
      */
-    public function networkingV2ExtLayer3(array $options = []): \OpenStack\Networking\v2\Extensions\Layer3\Service
+    public function networkingV2ExtLayer3(array $options = []): \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Service
     {
         $defaults = ['catalogName' => 'neutron', 'catalogType' => 'network'];
         return $this->builder->createService('Networking\\v2\\Extensions\\Layer3', array_merge($defaults, $options));
@@ -110,9 +110,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Networking\v2\Extensions\SecurityGroups\Service
+     * @return \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Service
      */
-    public function networkingV2ExtSecGroups(array $options = []): \OpenStack\Networking\v2\Extensions\SecurityGroups\Service
+    public function networkingV2ExtSecGroups(array $options = []): \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Service
     {
         $defaults = ['catalogName' => 'neutron', 'catalogType' => 'network'];
         return $this->builder->createService('Networking\\v2\\Extensions\\SecurityGroups', array_merge($defaults, $options));
@@ -123,9 +123,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Identity\v2\Service
+     * @return \DenLapaev\OpenStack\Identity\v2\Service
      */
-    public function identityV2(array $options = []): \OpenStack\Identity\v2\Service
+    public function identityV2(array $options = []): \DenLapaev\OpenStack\Identity\v2\Service
     {
         $defaults = ['catalogName' => 'keystone', 'catalogType' => 'identity'];
         return $this->builder->createService('Identity\\v2', array_merge($defaults, $options));
@@ -136,9 +136,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Identity\v3\Service
+     * @return \DenLapaev\OpenStack\Identity\v3\Service
      */
-    public function identityV3(array $options = []): \OpenStack\Identity\v3\Service
+    public function identityV3(array $options = []): \DenLapaev\OpenStack\Identity\v3\Service
     {
         $defaults = ['catalogName' => 'keystone', 'catalogType' => 'identity'];
         return $this->builder->createService('Identity\\v3', array_merge($defaults, $options));
@@ -149,9 +149,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\ObjectStore\v1\Service
+     * @return \DenLapaev\OpenStack\ObjectStore\v1\Service
      */
-    public function objectStoreV1(array $options = []): \OpenStack\ObjectStore\v1\Service
+    public function objectStoreV1(array $options = []): \DenLapaev\OpenStack\ObjectStore\v1\Service
     {
         $defaults = ['catalogName' => 'swift', 'catalogType' => 'object-store'];
         return $this->builder->createService('ObjectStore\\v1', array_merge($defaults, $options));
@@ -162,9 +162,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\BlockStorage\v2\Service
+     * @return \DenLapaev\OpenStack\BlockStorage\v2\Service
      */
-    public function blockStorageV2(array $options = []): \OpenStack\BlockStorage\v2\Service
+    public function blockStorageV2(array $options = []): \DenLapaev\OpenStack\BlockStorage\v2\Service
     {
         $defaults = ['catalogName' => 'cinderv2', 'catalogType' => 'volumev2'];
         return $this->builder->createService('BlockStorage\\v2', array_merge($defaults, $options));
@@ -175,9 +175,9 @@ class OpenStack
      *
      * @param array $options Options that will be used in configuring the service.
      *
-     * @return \OpenStack\Images\v2\Service
+     * @return \DenLapaev\OpenStack\Images\v2\Service
      */
-    public function imagesV2(array $options = []): \OpenStack\Images\v2\Service
+    public function imagesV2(array $options = []): \DenLapaev\OpenStack\Images\v2\Service
     {
         $defaults = ['catalogName' => 'glance', 'catalogType' => 'image'];
         return $this->builder->createService('Images\\v2', array_merge($defaults, $options));

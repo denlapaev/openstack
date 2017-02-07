@@ -14,5 +14,5 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 
 $compute = $openstack->computeV2(['region' => '{region}']);
 
-/** @var \OpenStack\Compute\v2\Models\Limit $limit */
+/** @var \DenLapaev\OpenStack\Compute\v2\Models\Limit $limit */
 $limit = $compute->getLimits();

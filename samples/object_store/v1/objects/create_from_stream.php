@@ -22,7 +22,7 @@ $options = [
     'stream' => $stream,
 ];
 
-/** @var \OpenStack\ObjectStore\v1\Models\Object $object */
+/** @var \DenLapaev\OpenStack\ObjectStore\v1\Models\Object $object */
 $object = $openstack->objectStoreV1()
     ->getContainer('{containerName}')
     ->createObject($options);

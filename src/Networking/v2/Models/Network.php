@@ -12,7 +12,7 @@ use DenLapaev\OpenStack\Common\Resource\Retrievable;
 /**
  * Represents a Networking v2 Network.
  *
- * @property \OpenStack\Networking\v2\Api $api
+ * @property \DenLapaev\OpenStack\Networking\v2\Api $api
  */
 class Network extends OperatorResource implements Listable, Retrievable, Creatable, Deletable
 {
@@ -59,7 +59,7 @@ class Network extends OperatorResource implements Listable, Retrievable, Creatab
     /**
      * Creates multiple networks in a single request.
      *
-     * @param array $data {@see \OpenStack\Networking\v2\Api::postNetworks}
+     * @param array $data {@see \DenLapaev\OpenStack\Networking\v2\Api::postNetworks}
      *
      * @return Network[]
      */
@@ -72,7 +72,7 @@ class Network extends OperatorResource implements Listable, Retrievable, Creatab
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \OpenStack\Networking\v2\Api::postNetwork}
+     * @param array $data {@see \DenLapaev\OpenStack\Networking\v2\Api::postNetwork}
      */
     public function create(array $data): Creatable
     {

@@ -2,7 +2,7 @@
 
 namespace DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups;
 
-class Params extends \OpenStack\Networking\v2\Params
+class Params extends \DenLapaev\OpenStack\Networking\v2\Params
 {
     public function directionJson()
     {

@@ -10,14 +10,14 @@ use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
 /**
  * Network v2 service for OpenStack.
  *
- * @property \OpenStack\Networking\v2\Api $api
+ * @property \DenLapaev\OpenStack\Networking\v2\Api $api
  */
 class Service extends AbstractService
 {
     /**
      * Create a new network resource.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postNetwork}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postNetwork}
      *
      * @return Network
      */
@@ -29,7 +29,7 @@ class Service extends AbstractService
     /**
      * Create a new network resources.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postNetworks}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postNetworks}
      *
      * @return array
      */
@@ -55,7 +55,7 @@ class Service extends AbstractService
     /**
      * List networks.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::getNetworks}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::getNetworks}
      *
      * @return \Generator
      */
@@ -67,7 +67,7 @@ class Service extends AbstractService
     /**
      * Create a new subnet resource.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postSubnet}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postSubnet}
      *
      * @return Subnet
      */
@@ -79,7 +79,7 @@ class Service extends AbstractService
     /**
      * Create a new subnet resources.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postSubnets}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postSubnets}
      *
      * @return []Subnet
      */
@@ -105,7 +105,7 @@ class Service extends AbstractService
     /**
      * List subnets.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::getSubnets}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::getSubnets}
      *
      * @return \Generator
      */
@@ -117,7 +117,7 @@ class Service extends AbstractService
     /**
      * Create a new port resource.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postSinglePort}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postSinglePort}
      *
      * @return Port
      */
@@ -129,7 +129,7 @@ class Service extends AbstractService
     /**
      * Create new port resources.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::postMultiplePorts}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::postMultiplePorts}
      *
      * @return []Port
      */
@@ -155,7 +155,7 @@ class Service extends AbstractService
     /**
      * List ports.
      *
-     * @param array $options {@see \OpenStack\Networking\v2\Api::getPorts}
+     * @param array $options {@see \DenLapaev\OpenStack\Networking\v2\Api::getPorts}
      *
      * @return \Generator
      */

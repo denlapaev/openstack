@@ -11,7 +11,7 @@ use DenLapaev\OpenStack\Identity\v2\Models\Token;
 /**
  * Represents the OpenStack Identity v2 service.
  *
- * @property \OpenStack\Identity\v2\Api $api
+ * @property \DenLapaev\OpenStack\Identity\v2\Api $api
  */
 class Service extends AbstractService implements IdentityService
 {
@@ -41,7 +41,7 @@ class Service extends AbstractService implements IdentityService
     /**
      * Generates a new authentication token
      *
-     * @param array $options {@see \OpenStack\Identity\v2\Api::postToken}
+     * @param array $options {@see \DenLapaev\OpenStack\Identity\v2\Api::postToken}
      *
      * @return Models\Token
      */

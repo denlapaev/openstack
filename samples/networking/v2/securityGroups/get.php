@@ -14,6 +14,6 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 
 $networking = $openstack->networkingV2ExtSecGroups();
 
-/** @var \OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
+/** @var \DenLapaev\OpenStack\Networking\v2\Extensions\SecurityGroups\Models\SecurityGroup $secGroup */
 $secGroup = $networking->getSecurityGroup('{id}');
 $secGroup->retrieve();

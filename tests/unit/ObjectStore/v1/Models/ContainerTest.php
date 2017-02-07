@@ -161,7 +161,7 @@ class ContainerTest extends TestCase
     }
 
     /**
-     * @expectedException \OpenStack\Common\Error\BadResponseError
+     * @expectedException \DenLapaev\OpenStack\Common\Error\BadResponseError
      */
     public function test_other_exceptions_are_thrown()
     {

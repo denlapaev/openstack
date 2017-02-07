@@ -210,7 +210,7 @@ class CoreTest extends TestCase
             '{networkId}'  => $this->network->id
         ];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         $path = $this->sampleFile($replacements, 'servers/create_server.php');
         require_once $path;
 
@@ -235,7 +235,7 @@ class CoreTest extends TestCase
             '{newName}'  => $name,
         ];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         $path = $this->sampleFile($replacements, 'servers/update_server.php');
         require_once $path;
 
@@ -251,7 +251,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         $path = $this->sampleFile($replacements, 'servers/delete_server.php');
         require_once $path;
 
@@ -264,7 +264,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         $path = $this->sampleFile($replacements, 'servers/get_server.php');
         require_once $path;
 
@@ -285,7 +285,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/reset_server_metadata.php');
         $this->logStep('Reset metadata of server {serverId}', $replacements);
 
@@ -322,7 +322,7 @@ class CoreTest extends TestCase
             '{flavorId}' => $resizeFlavorId,
         ];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/resize_server.php');
 
         $server->waitUntil('VERIFY_RESIZE');
@@ -334,7 +334,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/confirm_server_resize.php');
 
         $server->waitUntilActive();
@@ -350,7 +350,7 @@ class CoreTest extends TestCase
             '{adminPass}' => $this->adminPass,
         ];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/rebuild_server.php');
 
         $server->waitUntilActive();
@@ -362,7 +362,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/reboot_server.php');
 
         $server->waitUntilActive(false);
@@ -374,7 +374,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/stop_server.php');
 
         $server->waitUntil('SHUTOFF', false);
@@ -386,7 +386,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{serverId}' => $this->serverId];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'servers/start_server.php');
 
         $server->waitUntilActive(false);
@@ -400,7 +400,7 @@ class CoreTest extends TestCase
             '{flavorName}' => $this->randomStr()
         ];
 
-        /** @var $flavor \OpenStack\Compute\v2\Models\Flavor */
+        /** @var $flavor \DenLapaev\OpenStack\Compute\v2\Models\Flavor */
         $path = $this->sampleFile($replacements, 'flavors/create_flavor.php');
         require_once $path;
 
@@ -445,7 +445,7 @@ class CoreTest extends TestCase
             '{imageName}' => $name,
         ];
 
-        /** @var $server \OpenStack\Compute\v2\Models\Server */
+        /** @var $server \DenLapaev\OpenStack\Compute\v2\Models\Server */
         require_once $this->sampleFile($replacements, 'images/create_server_image.php');
 
         $server->waitWithCallback(function (Server $server) {
@@ -477,7 +477,7 @@ class CoreTest extends TestCase
     {
         $replacements = ['{imageId}' => $this->imageId];
 
-        /** @var $image \OpenStack\Compute\v2\Models\Image */
+        /** @var $image \DenLapaev\OpenStack\Compute\v2\Models\Image */
         require_once $this->sampleFile($replacements, 'images/reset_image_metadata.php');
         $this->logStep('Reset metadata of image {imageId}', $replacements);
 

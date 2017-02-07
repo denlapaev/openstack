@@ -14,7 +14,7 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 
 $compute = $openstack->computeV2(['region' => '{region}']);
 
-/** @var \OpenStack\Compute\v2\Models\Keypair $keypair */
+/** @var \DenLapaev\OpenStack\Compute\v2\Models\Keypair $keypair */
 $keypair = $compute->getKeypair(['name' => '{name}']);
 
 $keypair->retrieve();

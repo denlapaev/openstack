@@ -8,7 +8,7 @@ use DenLapaev\OpenStack\Common\Resource\Deletable;
 use DenLapaev\OpenStack\Common\Resource\Updateable;
 
 /**
- * @property \OpenStack\Identity\v3\Api $api
+ * @property \DenLapaev\OpenStack\Identity\v3\Api $api
  */
 class Endpoint extends OperatorResource implements Creatable, Updateable, Deletable
 {
@@ -40,7 +40,7 @@ class Endpoint extends OperatorResource implements Creatable, Updateable, Deleta
     /**
      * {@inheritDoc}
      *
-     * @param array $data {@see \OpenStack\Identity\v3\Api::postEndpoints}
+     * @param array $data {@see \DenLapaev\OpenStack\Identity\v3\Api::postEndpoints}
      */
     public function create(array $data): Creatable
     {

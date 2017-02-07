@@ -9,7 +9,7 @@ use DenLapaev\OpenStack\Common\Resource\Listable;
 use DenLapaev\OpenStack\Common\Resource\Retrievable;
 
 /**
- * @property \OpenStack\Images\v2\Api $api
+ * @property \DenLapaev\OpenStack\Images\v2\Api $api
  */
 class Member extends OperatorResource implements Creatable, Listable, Retrievable, Deletable
 {

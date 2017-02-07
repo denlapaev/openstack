@@ -14,7 +14,7 @@ $openstack = new DenLapaev\OpenStack\OpenStack([
 
 $networking = $openstack->networkingV2ExtLayer3();
 
-/** @var \OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $ip */
+/** @var \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Models\FloatingIp $ip */
 $ip = $networking->createFloatingIp([
     "floatingNetworkId" => "{networkId}",
     "portId"            => "{portId}",

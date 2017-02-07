@@ -13,7 +13,7 @@ class CoreTest extends TestCase
     private $service;
 
     /**
-     * @return \OpenStack\BlockStorage\v2\Service
+     * @return \DenLapaev\OpenStack\BlockStorage\v2\Service
      */
     private function getService()
     {

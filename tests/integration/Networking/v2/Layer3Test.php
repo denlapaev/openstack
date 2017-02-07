@@ -11,12 +11,12 @@ use DenLapaev\OpenStack\Networking\v2\Models\Subnet;
 
 class Layer3Test extends TestCase
 {
-    public function getService(): \OpenStack\Networking\v2\Extensions\Layer3\Service
+    public function getService(): \DenLapaev\OpenStack\Networking\v2\Extensions\Layer3\Service
     {
         return $this->getBaseClient()->networkingV2ExtLayer3();
     }
 
-    private function getV2Service(): \OpenStack\Networking\v2\Service
+    private function getV2Service(): \DenLapaev\OpenStack\Networking\v2\Service
     {
         return $this->getBaseClient()->networkingV2();
     }

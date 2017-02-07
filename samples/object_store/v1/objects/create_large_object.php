@@ -27,7 +27,7 @@ $options['segmentSize'] = 1073741824;
 $options['segmentContainer'] = 'test_segments';
 
 
-/** @var \OpenStack\ObjectStore\v1\Models\Object $object */
+/** @var \DenLapaev\OpenStack\ObjectStore\v1\Models\Object $object */
 $object = $openstack->objectStoreV1()
                     ->getContainer('test')
                     ->createLargeObject($options);

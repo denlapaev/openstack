@@ -196,7 +196,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'endpoints', $expectedJson, ['Content-Type' => 'application/json'], 'endpoint');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Endpoint */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Endpoint */
         $endpoint = $this->service->createEndpoint($userOptions);
 
         $this->assertInstanceOf(Models\Endpoint::class, $endpoint);
@@ -218,7 +218,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'domains', ['domain' => $userOptions], [], 'domain');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Domain */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Domain */
         $domain = $this->service->createDomain($userOptions);
 
         $this->assertInstanceOf(Models\Domain::class, $domain);
@@ -249,7 +249,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'projects', ['project' => $userOptions], [], 'project');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Project */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Project */
         $project = $this->service->createProject($userOptions);
 
         $this->assertInstanceOf(Models\Project::class, $project);
@@ -301,7 +301,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'users', ['user' => $userJson], [], 'user');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\User */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\User */
         $user = $this->service->createUser($userOptions);
 
         $this->assertInstanceOf(Models\User::class, $user);
@@ -334,7 +334,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'groups', ['group' => $userOptions], [], 'group');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Group */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Group */
         $group = $this->service->createGroup($userOptions);
 
         $this->assertInstanceOf(Models\Group::class, $group);
@@ -373,7 +373,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'credentials', $userJson, [], 'cred');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Credential */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Credential */
         $cred = $this->service->createCredential($userOptions);
 
         $this->assertInstanceOf(Models\Credential::class, $cred);
@@ -400,7 +400,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'roles', ['role' => $userOptions], [], 'role');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Role */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Role */
         $role = $this->service->createRole($userOptions);
 
         $this->assertInstanceOf(Models\Role::class, $role);
@@ -437,7 +437,7 @@ class ServiceTest extends TestCase
 
         $this->setupMock('POST', 'policies', $userJson, [], 'policy');
 
-        /** @var $endpoint \OpenStack\Identity\v3\Models\Policy */
+        /** @var $endpoint \DenLapaev\OpenStack\Identity\v3\Models\Policy */
         $policy = $this->service->createPolicy($userOptions);
 
         $this->assertInstanceOf(Models\Policy::class, $policy);
