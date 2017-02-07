@@ -45,6 +45,7 @@ class Token extends OperatorResource implements Creatable, Retrievable, \OpenSta
     protected $aliases = [
         'expires_at' => 'expires',
         'issued_at'  => 'issued',
+        'Catalog'    => 'catalog',
     ];
 
     /**

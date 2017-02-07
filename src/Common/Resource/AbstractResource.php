@@ -91,7 +91,7 @@ abstract class AbstractResource implements ResourceInterface, Serializable
             }
             $val = $array;
         } elseif (strcasecmp($type, '\datetimeimmutable') === 0) {
-            $val = new \DateTimeImmutable($val);
+            $val = \DateTimeImmutable::createFromFormat('Y-m-d\TH:i:s.u\Z', substr($val, 0, -4).'Z', new \DateTimeZone('UTC'));
         } elseif ($this->isNotNativeType($type)) {
             $val = $this->model($this->normalizeModelClass($type), $val);
         }
