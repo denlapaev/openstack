@@ -119,9 +119,13 @@ class Params extends AbstractParams
     public function dnsNameservers(): array
     {
         return [
-            'type'        => self::STRING_TYPE,
+            'type'        => self::ARRAY_TYPE,
             'sentAs'      => 'dns_nameservers',
             'description' => 'A list of DNS name servers for the subnet.',
+            'items'    => [
+                'type'        => self::STRING_TYPE,
+                'description' => 'The nameserver',
+            ],
         ];
     }
 
@@ -282,10 +286,27 @@ class Params extends AbstractParams
     public function fixedIps(): array
     {
         return [
-            'type'        => self::STRING_TYPE,
+            'type'        => self::ARRAY_TYPE,
             'location'    => self::JSON,
             'sentAs'      => 'fixed_ips',
-            'description' => 'If you specify only a subnet UUID, OpenStack Networking allocates an available IP from that subnet to the port. If you specify both a subnet UUID and an IP address, OpenStack Networking tries to allocate the address to the port.',
+            'description' => 'The IP addresses for the port. If you would like to assign multiple IP addresses for the
+                              port, specify multiple entries in this field. Each entry consists of IP address (ipAddress)
+                              and the subnet ID from which the IP address is assigned (subnetId)',
+            'items'       => [
+                'type'    => self::OBJECT_TYPE,
+                'properties' => [
+                    'ipAddress' => [
+                        'type' => self::STRING_TYPE,
+                        'sentAs' => 'ip_address',
+                        'description' => 'If you specify only an IP address, OpenStack Networking tries to allocate the IP address if the address is a valid IP for any of the subnets on the specified network.'
+                    ],
+                    'subnetId' => [
+                        'type' => self::STRING_TYPE,
+                        'sentAs' => 'subnet_id',
+                        'description' => 'Subnet id. If you specify only a subnet ID, OpenStack Networking allocates an available IP from that subnet to the port.'
+                    ]
+                ]
+            ]
         ];
     }
 
@@ -400,6 +421,273 @@ class Params extends AbstractParams
             'location'    => self::JSON,
             'sentAs'      => 'router:external',
             'description' => 'Indicates whether this network is externally accessible.',
+        ];
+    }
+
+    protected function quotaLimit(string $sentAs, string $description): array
+    {
+        return [
+            'type' => self::INT_TYPE,
+            'location' => self::JSON,
+            'sentAs' => $sentAs,
+            'description' => $description
+        ];
+    }
+
+    public function quotaLimitFloatingIp(): array
+    {
+        return $this->quotaLimit('floatingip', 'The number of floating IP addresses allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitNetwork(): array
+    {
+        return $this->quotaLimit('network', 'The number of networks allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitPort(): array
+    {
+        return $this->quotaLimit('port', 'The number of ports allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitRbacPolicy(): array
+    {
+        return $this->quotaLimit('rbac_policy', 'The number of role-based access control (RBAC) policies for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitRouter(): array
+    {
+        return $this->quotaLimit('router', 'The number of routers allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitSecurityGroup(): array
+    {
+        return $this->quotaLimit('security_group', 'The number of security groups allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitSecurityGroupRule(): array
+    {
+        return $this->quotaLimit('security_group_rule', 'The number of security group rules allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitSubnet(): array
+    {
+        return $this->quotaLimit('subnet', 'The number of subnets allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function quotaLimitSubnetPool(): array
+    {
+        return $this->quotaLimit('subnetpool', 'The number of subnet pools allowed for each project. A value of -1 means no limit.');
+    }
+
+    public function vipSubnetId(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'vip_subnet_id',
+            'description' => 'The network on which to allocate the load balancer\'s vip address.',
+        ];
+    }
+
+    public function vipAddress(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'vip_address',
+            'description' => 'The address to assign the load balancer\'s vip address to.',
+        ];
+    }
+
+    public function provider(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The name of a valid provider to provision the load balancer.',
+        ];
+    }
+
+    public function connectionLimit(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'connection_limit',
+            'description' => 'The number of connections allowed by this listener.',
+        ];
+    }
+
+    public function loadbalancerId(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'loadbalancer_id',
+            'description' => 'The ID of a load balancer.',
+        ];
+    }
+
+    public function loadbalancerIdUrl(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::URL,
+            'description' => 'The ID of a load balancer.',
+        ];
+    }
+
+    public function protocol(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The protocol the frontend will be listening for. (TCP, HTTP, HTTPS)',
+        ];
+    }
+
+    public function protocolPort(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'protocol_port',
+            'description' => 'The port in which the frontend will be listening. (1-65535)',
+        ];
+    }
+
+    public function lbAlgorithm(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'lb_algorithm',
+            'description' => 'The load balancing algorithm to distribute traffic to the pool\'s members. (ROUND_ROBIN|LEAST_CONNECTIONS|SOURCE_IP)',
+        ];
+    }
+
+    public function listenerId(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'listener_id',
+            'description' => 'The listener in which this pool will become the default pool. There can only be one default pool for a listener.',
+        ];
+    }
+
+    public function sessionPersistence(): array
+    {
+        return [
+            'type'        => self::OBJECT_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'session_persistence',
+            'description' => 'The default value for this is an empty dictionary.',
+        ];
+    }
+
+    public function address(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'address',
+            'description' => 'The IP Address of the member to receive traffic from the load balancer.',
+        ];
+    }
+
+    public function poolId(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::URL,
+            'description' => 'The ID of the load balancer pool.',
+        ];
+    }
+
+    public function poolIdJson(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'pool_id',
+            'description' => 'The ID of the load balancer pool.',
+        ];
+    }
+
+    public function weight(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The default value for this attribute will be 1.',
+        ];
+    }
+
+    public function delay(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The interval in seconds between health checks.'
+        ];
+    }
+
+    public function timeout(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The time in seconds that a health check times out.'
+        ];
+    }
+
+    public function maxRetries(): array
+    {
+        return [
+            'type'        => self::INT_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'max_retries',
+            'description' => 'Number of failed health checks before marked as OFFLINE.'
+        ];
+    }
+
+    public function httpMethod(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'http_method',
+            'description' => 'The default value for this attribute is GET.'
+        ];
+    }
+
+    public function urlPath(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'url_path',
+            'description' => 'The default value is "/"'
+        ];
+    }
+
+    public function expectedCodes(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'sentAs'      => 'expected_codes',
+            'description' => 'The expected http status codes to get from a successful health check. Defaults to 200. (comma separated)'
+        ];
+    }
+
+    public function type(): array
+    {
+        return [
+            'type'        => self::STRING_TYPE,
+            'location'    => self::JSON,
+            'description' => 'The type of health monitor. Must be one of TCP, HTTP, HTTPS'
         ];
     }
 }
